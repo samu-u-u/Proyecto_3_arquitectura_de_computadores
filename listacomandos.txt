@@ -1,0 +1,12 @@
+sudo apt-get update
+sudo apt-get install -y build-essential python3 python3-venv python3-pip curl make git uidmap openssh-client
+sudo apt-get install -y libfuse2t64 || sudo apt-get install -y libfuse2
+rsync -a --progress samu@192.168.100.132:.ciel/ ~/.ciel/
+rsync -a --progress samu@192.168.100.132:librelane-devshell-x86_64.AppImage ~/
+chmod a+x ~/librelane-devshell-x86_64.AppImage
+python3 -m venv ~/ciel-venv
+~/ciel-venv/bin/pip install --upgrade ciel
+~/ciel-venv/bin/ciel enable --pdk gf180mcu 792ef67037d74c8c51811eab3ce23cf793491296
+git clone https://github.com/samu-u-u/Proyecto_3_arquitectura_de_computadores.git ~/Proyecto_3
+cd ~/Proyecto_3
+~/librelane-devshell-x86_64.AppImage
