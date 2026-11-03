@@ -1,0 +1,25 @@
+# Corrida final / estrategia (a): ROM combinacional + RAM de datos
+PDK: "gf180mcuD"
+STD_CELL_LIBRARY: "gf180mcu_fd_sc_mcu7t5v0"
+DESIGN_NAME: "asic_ff_top"
+VERILOG_FILES:
+  - "rtl/asic/asic_ff_top.v"
+  - "rtl/asic/asic_top.v"
+  - "rtl/asic/pochoco_soc_asic.v"
+  - "rtl/asic/pochoco_rom.v"
+  - "rtl/asic/pochoco_dram.v"
+  - "sw/game_rom.v"           # generado por el assembler
+  - "sw/game_ffmem.v"         # incluido por la rama no elaborada del generate
+  - "rtl/pochoco_periph.v"
+  - "rtl/pochoco_spi_slave.v"
+  - "rtl/espino_core/espino_core.v"
+  - "rtl/espino_core/espino_if_stage.v"
+  - "rtl/espino_core/espino_id_stage.v"
+  - "rtl/espino_core/espino_decoder.v"
+  - "rtl/espino_core/espino_controller.v"
+  - "rtl/espino_core/espino_alu.v"
+  - "rtl/espino_core/espino_register_file.v"
+  - "rtl/espino_core/espino_load_store_unit.v"
+CLOCK_PORT: "i_Clk"
+CLOCK_PERIOD: 100        # T = 100 ns (10 MHz) - parametro del curso
+FP_CORE_UTIL: 40         # U objetivo del curso
