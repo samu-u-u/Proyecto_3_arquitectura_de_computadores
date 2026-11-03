@@ -32,8 +32,8 @@
 #   x15 scratch
 # =============================================================
 
-.equ TENTH,   250000000        # ciclos por décima de segundo
-.equ TRES_S,  250000000      # ciclos de la fase de espera (3 s)
+.equ TENTH,   1000000        # ciclos por décima de segundo
+.equ TRES_S,  30000000      # ciclos de la fase de espera (3 s)
 .equ DIGITOS, 0              # offset displays
 .equ LEDS,    4              # offset LEDs
 .equ BOTONES, 8              # offset botones
