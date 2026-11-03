@@ -18,7 +18,7 @@ VERILOG_FILES:
   - "rtl/espino_core/espino_decoder.v"
   - "rtl/espino_core/espino_controller.v"
   - "rtl/espino_core/espino_alu.v"
-  - "rtl/espino_core/espino_register_file.v"
+  - "rtl/asic/espino_register_file_asic.v"
   - "rtl/espino_core/espino_load_store_unit.v"
 CLOCK_PORT: "i_Clk"
 CLOCK_PERIOD: 100        # T = 100 ns (10 MHz) - parametro del curso

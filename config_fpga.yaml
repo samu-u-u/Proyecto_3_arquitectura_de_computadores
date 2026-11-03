@@ -1,9 +1,11 @@
-# Corrida exploratoria: capturar los warnings del RTL FPGA original (evidencia informe 3.1)
+# Corrida exploratoria: capturar warnings del RTL FPGA original (evidencia 3.1)
 PDK: "gf180mcuD"
 STD_CELL_LIBRARY: "gf180mcu_fd_sc_mcu7t5v0"
 DESIGN_NAME: "game_top"
+ERROR_ON_LINTER_ERRORS: false      # dejar pasar el lint para llegar a Yosys
 VERILOG_FILES:
   - "game_top.v"
+  - "rtl/fpga_stub.v"
   - "rtl/pochoco_soc.v"
   - "rtl/pochoco_ram.v"
   - "rtl/pochoco_periph.v"
