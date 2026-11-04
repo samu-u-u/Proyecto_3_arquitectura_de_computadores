@@ -1,0 +1,5 @@
+0 ns: >>> LED cambia a 0000
+--- Reset liberado ---
+1460000 ns: >>> LED cambia a 1111
+--- Fin: LED=1111 ---
+tb_asic_rom_top.v:35: $finish called at 1000000000 (1ps)
