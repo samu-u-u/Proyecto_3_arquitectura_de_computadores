@@ -53,7 +53,7 @@ def generar_memorias_verilog(palabras, salida_hex):
     L.append("  wire [AW-1:0] b_word = b_addr_i[AW+1:2];")
     for g in range(npow):
         p = palabras[g] if g < n else 0
-        L.append(f"  wire hit_{g} = b_req_i & b_we_i & (b_word == AW'd{g});")
+        L.append(f"  wire hit_{g} = b_req_i & b_we_i & (b_word == {addrw}'d{g});")
         L.append("  always @(posedge clk_i or negedge rst_ni) begin")
         L.append("    if (!rst_ni) begin")
         for b in range(4):

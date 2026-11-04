@@ -17,7 +17,7 @@ module game_ffmem (
   reg [4095:0] mem;
   wire [AW-1:0] a_word = a_addr_i[AW+1:2];
   wire [AW-1:0] b_word = b_addr_i[AW+1:2];
-  wire hit_0 = b_req_i & b_we_i & (b_word == AW'd0);
+  wire hit_0 = b_req_i & b_we_i & (b_word == 7'd0);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[0*32 + 0 +: 8] <= 8'h6f;
@@ -31,7 +31,7 @@ module game_ffmem (
       if (hit_0 & b_be_i[3]) mem[0*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_1 = b_req_i & b_we_i & (b_word == AW'd1);
+  wire hit_1 = b_req_i & b_we_i & (b_word == 7'd1);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[1*32 + 0 +: 8] <= 8'h13;
@@ -45,7 +45,7 @@ module game_ffmem (
       if (hit_1 & b_be_i[3]) mem[1*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_2 = b_req_i & b_we_i & (b_word == AW'd2);
+  wire hit_2 = b_req_i & b_we_i & (b_word == 7'd2);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[2*32 + 0 +: 8] <= 8'h13;
@@ -59,7 +59,7 @@ module game_ffmem (
       if (hit_2 & b_be_i[3]) mem[2*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_3 = b_req_i & b_we_i & (b_word == AW'd3);
+  wire hit_3 = b_req_i & b_we_i & (b_word == 7'd3);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[3*32 + 0 +: 8] <= 8'h13;
@@ -73,7 +73,7 @@ module game_ffmem (
       if (hit_3 & b_be_i[3]) mem[3*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_4 = b_req_i & b_we_i & (b_word == AW'd4);
+  wire hit_4 = b_req_i & b_we_i & (b_word == 7'd4);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[4*32 + 0 +: 8] <= 8'h13;
@@ -87,7 +87,7 @@ module game_ffmem (
       if (hit_4 & b_be_i[3]) mem[4*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_5 = b_req_i & b_we_i & (b_word == AW'd5);
+  wire hit_5 = b_req_i & b_we_i & (b_word == 7'd5);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[5*32 + 0 +: 8] <= 8'h13;
@@ -101,7 +101,7 @@ module game_ffmem (
       if (hit_5 & b_be_i[3]) mem[5*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_6 = b_req_i & b_we_i & (b_word == AW'd6);
+  wire hit_6 = b_req_i & b_we_i & (b_word == 7'd6);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[6*32 + 0 +: 8] <= 8'h13;
@@ -115,7 +115,7 @@ module game_ffmem (
       if (hit_6 & b_be_i[3]) mem[6*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_7 = b_req_i & b_we_i & (b_word == AW'd7);
+  wire hit_7 = b_req_i & b_we_i & (b_word == 7'd7);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[7*32 + 0 +: 8] <= 8'h13;
@@ -129,7 +129,7 @@ module game_ffmem (
       if (hit_7 & b_be_i[3]) mem[7*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_8 = b_req_i & b_we_i & (b_word == AW'd8);
+  wire hit_8 = b_req_i & b_we_i & (b_word == 7'd8);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[8*32 + 0 +: 8] <= 8'h13;
@@ -143,7 +143,7 @@ module game_ffmem (
       if (hit_8 & b_be_i[3]) mem[8*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_9 = b_req_i & b_we_i & (b_word == AW'd9);
+  wire hit_9 = b_req_i & b_we_i & (b_word == 7'd9);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[9*32 + 0 +: 8] <= 8'h13;
@@ -157,7 +157,7 @@ module game_ffmem (
       if (hit_9 & b_be_i[3]) mem[9*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_10 = b_req_i & b_we_i & (b_word == AW'd10);
+  wire hit_10 = b_req_i & b_we_i & (b_word == 7'd10);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[10*32 + 0 +: 8] <= 8'h13;
@@ -171,7 +171,7 @@ module game_ffmem (
       if (hit_10 & b_be_i[3]) mem[10*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_11 = b_req_i & b_we_i & (b_word == AW'd11);
+  wire hit_11 = b_req_i & b_we_i & (b_word == 7'd11);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[11*32 + 0 +: 8] <= 8'h13;
@@ -185,7 +185,7 @@ module game_ffmem (
       if (hit_11 & b_be_i[3]) mem[11*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_12 = b_req_i & b_we_i & (b_word == AW'd12);
+  wire hit_12 = b_req_i & b_we_i & (b_word == 7'd12);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[12*32 + 0 +: 8] <= 8'h13;
@@ -199,7 +199,7 @@ module game_ffmem (
       if (hit_12 & b_be_i[3]) mem[12*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_13 = b_req_i & b_we_i & (b_word == AW'd13);
+  wire hit_13 = b_req_i & b_we_i & (b_word == 7'd13);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[13*32 + 0 +: 8] <= 8'h13;
@@ -213,7 +213,7 @@ module game_ffmem (
       if (hit_13 & b_be_i[3]) mem[13*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_14 = b_req_i & b_we_i & (b_word == AW'd14);
+  wire hit_14 = b_req_i & b_we_i & (b_word == 7'd14);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[14*32 + 0 +: 8] <= 8'h13;
@@ -227,7 +227,7 @@ module game_ffmem (
       if (hit_14 & b_be_i[3]) mem[14*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_15 = b_req_i & b_we_i & (b_word == AW'd15);
+  wire hit_15 = b_req_i & b_we_i & (b_word == 7'd15);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[15*32 + 0 +: 8] <= 8'h13;
@@ -241,7 +241,7 @@ module game_ffmem (
       if (hit_15 & b_be_i[3]) mem[15*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_16 = b_req_i & b_we_i & (b_word == AW'd16);
+  wire hit_16 = b_req_i & b_we_i & (b_word == 7'd16);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[16*32 + 0 +: 8] <= 8'h13;
@@ -255,7 +255,7 @@ module game_ffmem (
       if (hit_16 & b_be_i[3]) mem[16*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_17 = b_req_i & b_we_i & (b_word == AW'd17);
+  wire hit_17 = b_req_i & b_we_i & (b_word == 7'd17);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[17*32 + 0 +: 8] <= 8'hb7;
@@ -269,7 +269,7 @@ module game_ffmem (
       if (hit_17 & b_be_i[3]) mem[17*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_18 = b_req_i & b_we_i & (b_word == AW'd18);
+  wire hit_18 = b_req_i & b_we_i & (b_word == 7'd18);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[18*32 + 0 +: 8] <= 8'h37;
@@ -283,7 +283,7 @@ module game_ffmem (
       if (hit_18 & b_be_i[3]) mem[18*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_19 = b_req_i & b_we_i & (b_word == AW'd19);
+  wire hit_19 = b_req_i & b_we_i & (b_word == 7'd19);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[19*32 + 0 +: 8] <= 8'h13;
@@ -297,7 +297,7 @@ module game_ffmem (
       if (hit_19 & b_be_i[3]) mem[19*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_20 = b_req_i & b_we_i & (b_word == AW'd20);
+  wire hit_20 = b_req_i & b_we_i & (b_word == 7'd20);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[20*32 + 0 +: 8] <= 8'hb7;
@@ -311,7 +311,7 @@ module game_ffmem (
       if (hit_20 & b_be_i[3]) mem[20*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_21 = b_req_i & b_we_i & (b_word == AW'd21);
+  wire hit_21 = b_req_i & b_we_i & (b_word == 7'd21);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[21*32 + 0 +: 8] <= 8'h93;
@@ -325,7 +325,7 @@ module game_ffmem (
       if (hit_21 & b_be_i[3]) mem[21*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_22 = b_req_i & b_we_i & (b_word == AW'd22);
+  wire hit_22 = b_req_i & b_we_i & (b_word == 7'd22);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[22*32 + 0 +: 8] <= 8'h13;
@@ -339,7 +339,7 @@ module game_ffmem (
       if (hit_22 & b_be_i[3]) mem[22*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_23 = b_req_i & b_we_i & (b_word == AW'd23);
+  wire hit_23 = b_req_i & b_we_i & (b_word == 7'd23);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[23*32 + 0 +: 8] <= 8'h13;
@@ -353,7 +353,7 @@ module game_ffmem (
       if (hit_23 & b_be_i[3]) mem[23*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_24 = b_req_i & b_we_i & (b_word == AW'd24);
+  wire hit_24 = b_req_i & b_we_i & (b_word == 7'd24);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[24*32 + 0 +: 8] <= 8'h93;
@@ -367,7 +367,7 @@ module game_ffmem (
       if (hit_24 & b_be_i[3]) mem[24*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_25 = b_req_i & b_we_i & (b_word == AW'd25);
+  wire hit_25 = b_req_i & b_we_i & (b_word == 7'd25);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[25*32 + 0 +: 8] <= 8'h23;
@@ -381,7 +381,7 @@ module game_ffmem (
       if (hit_25 & b_be_i[3]) mem[25*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_26 = b_req_i & b_we_i & (b_word == AW'd26);
+  wire hit_26 = b_req_i & b_we_i & (b_word == 7'd26);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[26*32 + 0 +: 8] <= 8'h23;
@@ -395,7 +395,7 @@ module game_ffmem (
       if (hit_26 & b_be_i[3]) mem[26*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_27 = b_req_i & b_we_i & (b_word == AW'd27);
+  wire hit_27 = b_req_i & b_we_i & (b_word == 7'd27);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[27*32 + 0 +: 8] <= 8'h93;
@@ -409,7 +409,7 @@ module game_ffmem (
       if (hit_27 & b_be_i[3]) mem[27*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_28 = b_req_i & b_we_i & (b_word == AW'd28);
+  wire hit_28 = b_req_i & b_we_i & (b_word == 7'd28);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[28*32 + 0 +: 8] <= 8'h23;
@@ -423,7 +423,7 @@ module game_ffmem (
       if (hit_28 & b_be_i[3]) mem[28*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_29 = b_req_i & b_we_i & (b_word == AW'd29);
+  wire hit_29 = b_req_i & b_we_i & (b_word == 7'd29);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[29*32 + 0 +: 8] <= 8'h83;
@@ -437,7 +437,7 @@ module game_ffmem (
       if (hit_29 & b_be_i[3]) mem[29*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_30 = b_req_i & b_we_i & (b_word == AW'd30);
+  wire hit_30 = b_req_i & b_we_i & (b_word == 7'd30);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[30*32 + 0 +: 8] <= 8'h03;
@@ -451,7 +451,7 @@ module game_ffmem (
       if (hit_30 & b_be_i[3]) mem[30*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_31 = b_req_i & b_we_i & (b_word == AW'd31);
+  wire hit_31 = b_req_i & b_we_i & (b_word == 7'd31);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[31*32 + 0 +: 8] <= 8'hb3;
@@ -465,7 +465,7 @@ module game_ffmem (
       if (hit_31 & b_be_i[3]) mem[31*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_32 = b_req_i & b_we_i & (b_word == AW'd32);
+  wire hit_32 = b_req_i & b_we_i & (b_word == 7'd32);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[32*32 + 0 +: 8] <= 8'he3;
@@ -479,7 +479,7 @@ module game_ffmem (
       if (hit_32 & b_be_i[3]) mem[32*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_33 = b_req_i & b_we_i & (b_word == AW'd33);
+  wire hit_33 = b_req_i & b_we_i & (b_word == 7'd33);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[33*32 + 0 +: 8] <= 8'h83;
@@ -493,7 +493,7 @@ module game_ffmem (
       if (hit_33 & b_be_i[3]) mem[33*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_34 = b_req_i & b_we_i & (b_word == AW'd34);
+  wire hit_34 = b_req_i & b_we_i & (b_word == 7'd34);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[34*32 + 0 +: 8] <= 8'hb3;
@@ -507,7 +507,7 @@ module game_ffmem (
       if (hit_34 & b_be_i[3]) mem[34*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_35 = b_req_i & b_we_i & (b_word == AW'd35);
+  wire hit_35 = b_req_i & b_we_i & (b_word == 7'd35);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[35*32 + 0 +: 8] <= 8'h33;
@@ -521,7 +521,7 @@ module game_ffmem (
       if (hit_35 & b_be_i[3]) mem[35*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_36 = b_req_i & b_we_i & (b_word == AW'd36);
+  wire hit_36 = b_req_i & b_we_i & (b_word == 7'd36);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[36*32 + 0 +: 8] <= 8'hb3;
@@ -535,7 +535,7 @@ module game_ffmem (
       if (hit_36 & b_be_i[3]) mem[36*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_37 = b_req_i & b_we_i & (b_word == AW'd37);
+  wire hit_37 = b_req_i & b_we_i & (b_word == 7'd37);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[37*32 + 0 +: 8] <= 8'h93;
@@ -549,7 +549,7 @@ module game_ffmem (
       if (hit_37 & b_be_i[3]) mem[37*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_38 = b_req_i & b_we_i & (b_word == AW'd38);
+  wire hit_38 = b_req_i & b_we_i & (b_word == 7'd38);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[38*32 + 0 +: 8] <= 8'h63;
@@ -563,7 +563,7 @@ module game_ffmem (
       if (hit_38 & b_be_i[3]) mem[38*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_39 = b_req_i & b_we_i & (b_word == AW'd39);
+  wire hit_39 = b_req_i & b_we_i & (b_word == 7'd39);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[39*32 + 0 +: 8] <= 8'h93;
@@ -577,7 +577,7 @@ module game_ffmem (
       if (hit_39 & b_be_i[3]) mem[39*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_40 = b_req_i & b_we_i & (b_word == AW'd40);
+  wire hit_40 = b_req_i & b_we_i & (b_word == 7'd40);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[40*32 + 0 +: 8] <= 8'h63;
@@ -591,7 +591,7 @@ module game_ffmem (
       if (hit_40 & b_be_i[3]) mem[40*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_41 = b_req_i & b_we_i & (b_word == AW'd41);
+  wire hit_41 = b_req_i & b_we_i & (b_word == 7'd41);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[41*32 + 0 +: 8] <= 8'h93;
@@ -605,7 +605,7 @@ module game_ffmem (
       if (hit_41 & b_be_i[3]) mem[41*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_42 = b_req_i & b_we_i & (b_word == AW'd42);
+  wire hit_42 = b_req_i & b_we_i & (b_word == 7'd42);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[42*32 + 0 +: 8] <= 8'h63;
@@ -619,7 +619,7 @@ module game_ffmem (
       if (hit_42 & b_be_i[3]) mem[42*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_43 = b_req_i & b_we_i & (b_word == AW'd43);
+  wire hit_43 = b_req_i & b_we_i & (b_word == 7'd43);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[43*32 + 0 +: 8] <= 8'h6f;
@@ -633,7 +633,7 @@ module game_ffmem (
       if (hit_43 & b_be_i[3]) mem[43*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_44 = b_req_i & b_we_i & (b_word == AW'd44);
+  wire hit_44 = b_req_i & b_we_i & (b_word == 7'd44);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[44*32 + 0 +: 8] <= 8'h13;
@@ -647,7 +647,7 @@ module game_ffmem (
       if (hit_44 & b_be_i[3]) mem[44*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_45 = b_req_i & b_we_i & (b_word == AW'd45);
+  wire hit_45 = b_req_i & b_we_i & (b_word == 7'd45);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[45*32 + 0 +: 8] <= 8'h6f;
@@ -661,7 +661,7 @@ module game_ffmem (
       if (hit_45 & b_be_i[3]) mem[45*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_46 = b_req_i & b_we_i & (b_word == AW'd46);
+  wire hit_46 = b_req_i & b_we_i & (b_word == 7'd46);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[46*32 + 0 +: 8] <= 8'h13;
@@ -675,7 +675,7 @@ module game_ffmem (
       if (hit_46 & b_be_i[3]) mem[46*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_47 = b_req_i & b_we_i & (b_word == AW'd47);
+  wire hit_47 = b_req_i & b_we_i & (b_word == 7'd47);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[47*32 + 0 +: 8] <= 8'h6f;
@@ -689,7 +689,7 @@ module game_ffmem (
       if (hit_47 & b_be_i[3]) mem[47*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_48 = b_req_i & b_we_i & (b_word == AW'd48);
+  wire hit_48 = b_req_i & b_we_i & (b_word == 7'd48);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[48*32 + 0 +: 8] <= 8'h13;
@@ -703,7 +703,7 @@ module game_ffmem (
       if (hit_48 & b_be_i[3]) mem[48*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_49 = b_req_i & b_we_i & (b_word == AW'd49);
+  wire hit_49 = b_req_i & b_we_i & (b_word == 7'd49);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[49*32 + 0 +: 8] <= 8'h6f;
@@ -717,7 +717,7 @@ module game_ffmem (
       if (hit_49 & b_be_i[3]) mem[49*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_50 = b_req_i & b_we_i & (b_word == AW'd50);
+  wire hit_50 = b_req_i & b_we_i & (b_word == 7'd50);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[50*32 + 0 +: 8] <= 8'h13;
@@ -731,7 +731,7 @@ module game_ffmem (
       if (hit_50 & b_be_i[3]) mem[50*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_51 = b_req_i & b_we_i & (b_word == AW'd51);
+  wire hit_51 = b_req_i & b_we_i & (b_word == 7'd51);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[51*32 + 0 +: 8] <= 8'h23;
@@ -745,7 +745,7 @@ module game_ffmem (
       if (hit_51 & b_be_i[3]) mem[51*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_52 = b_req_i & b_we_i & (b_word == AW'd52);
+  wire hit_52 = b_req_i & b_we_i & (b_word == 7'd52);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[52*32 + 0 +: 8] <= 8'h83;
@@ -759,7 +759,7 @@ module game_ffmem (
       if (hit_52 & b_be_i[3]) mem[52*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_53 = b_req_i & b_we_i & (b_word == AW'd53);
+  wire hit_53 = b_req_i & b_we_i & (b_word == 7'd53);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[53*32 + 0 +: 8] <= 8'h83;
@@ -773,7 +773,7 @@ module game_ffmem (
       if (hit_53 & b_be_i[3]) mem[53*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_54 = b_req_i & b_we_i & (b_word == AW'd54);
+  wire hit_54 = b_req_i & b_we_i & (b_word == 7'd54);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[54*32 + 0 +: 8] <= 8'he3;
@@ -787,7 +787,7 @@ module game_ffmem (
       if (hit_54 & b_be_i[3]) mem[54*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_55 = b_req_i & b_we_i & (b_word == AW'd55);
+  wire hit_55 = b_req_i & b_we_i & (b_word == 7'd55);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[55*32 + 0 +: 8] <= 8'h83;
@@ -801,7 +801,7 @@ module game_ffmem (
       if (hit_55 & b_be_i[3]) mem[55*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_56 = b_req_i & b_we_i & (b_word == AW'd56);
+  wire hit_56 = b_req_i & b_we_i & (b_word == 7'd56);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[56*32 + 0 +: 8] <= 8'he3;
@@ -815,7 +815,7 @@ module game_ffmem (
       if (hit_56 & b_be_i[3]) mem[56*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_57 = b_req_i & b_we_i & (b_word == AW'd57);
+  wire hit_57 = b_req_i & b_we_i & (b_word == 7'd57);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[57*32 + 0 +: 8] <= 8'h63;
@@ -829,7 +829,7 @@ module game_ffmem (
       if (hit_57 & b_be_i[3]) mem[57*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_58 = b_req_i & b_we_i & (b_word == AW'd58);
+  wire hit_58 = b_req_i & b_we_i & (b_word == 7'd58);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[58*32 + 0 +: 8] <= 8'h6f;
@@ -843,7 +843,7 @@ module game_ffmem (
       if (hit_58 & b_be_i[3]) mem[58*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_59 = b_req_i & b_we_i & (b_word == AW'd59);
+  wire hit_59 = b_req_i & b_we_i & (b_word == 7'd59);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[59*32 + 0 +: 8] <= 8'h03;
@@ -857,7 +857,7 @@ module game_ffmem (
       if (hit_59 & b_be_i[3]) mem[59*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_60 = b_req_i & b_we_i & (b_word == AW'd60);
+  wire hit_60 = b_req_i & b_we_i & (b_word == 7'd60);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[60*32 + 0 +: 8] <= 8'h33;
@@ -871,7 +871,7 @@ module game_ffmem (
       if (hit_60 & b_be_i[3]) mem[60*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_61 = b_req_i & b_we_i & (b_word == AW'd61);
+  wire hit_61 = b_req_i & b_we_i & (b_word == 7'd61);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[61*32 + 0 +: 8] <= 8'h13;
@@ -885,7 +885,7 @@ module game_ffmem (
       if (hit_61 & b_be_i[3]) mem[61*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_62 = b_req_i & b_we_i & (b_word == AW'd62);
+  wire hit_62 = b_req_i & b_we_i & (b_word == 7'd62);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[62*32 + 0 +: 8] <= 8'h63;
@@ -899,7 +899,7 @@ module game_ffmem (
       if (hit_62 & b_be_i[3]) mem[62*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_63 = b_req_i & b_we_i & (b_word == AW'd63);
+  wire hit_63 = b_req_i & b_we_i & (b_word == 7'd63);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[63*32 + 0 +: 8] <= 8'h33;
@@ -913,7 +913,7 @@ module game_ffmem (
       if (hit_63 & b_be_i[3]) mem[63*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_64 = b_req_i & b_we_i & (b_word == AW'd64);
+  wire hit_64 = b_req_i & b_we_i & (b_word == 7'd64);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[64*32 + 0 +: 8] <= 8'h13;
@@ -927,7 +927,7 @@ module game_ffmem (
       if (hit_64 & b_be_i[3]) mem[64*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_65 = b_req_i & b_we_i & (b_word == AW'd65);
+  wire hit_65 = b_req_i & b_we_i & (b_word == 7'd65);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[65*32 + 0 +: 8] <= 8'h6f;
@@ -941,7 +941,7 @@ module game_ffmem (
       if (hit_65 & b_be_i[3]) mem[65*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_66 = b_req_i & b_we_i & (b_word == AW'd66);
+  wire hit_66 = b_req_i & b_we_i & (b_word == 7'd66);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[66*32 + 0 +: 8] <= 8'hb3;
@@ -955,7 +955,7 @@ module game_ffmem (
       if (hit_66 & b_be_i[3]) mem[66*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_67 = b_req_i & b_we_i & (b_word == AW'd67);
+  wire hit_67 = b_req_i & b_we_i & (b_word == 7'd67);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[67*32 + 0 +: 8] <= 8'h93;
@@ -969,7 +969,7 @@ module game_ffmem (
       if (hit_67 & b_be_i[3]) mem[67*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_68 = b_req_i & b_we_i & (b_word == AW'd68);
+  wire hit_68 = b_req_i & b_we_i & (b_word == 7'd68);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[68*32 + 0 +: 8] <= 8'h93;
@@ -983,7 +983,7 @@ module game_ffmem (
       if (hit_68 & b_be_i[3]) mem[68*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_69 = b_req_i & b_we_i & (b_word == AW'd69);
+  wire hit_69 = b_req_i & b_we_i & (b_word == 7'd69);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[69*32 + 0 +: 8] <= 8'h63;
@@ -997,7 +997,7 @@ module game_ffmem (
       if (hit_69 & b_be_i[3]) mem[69*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_70 = b_req_i & b_we_i & (b_word == AW'd70);
+  wire hit_70 = b_req_i & b_we_i & (b_word == 7'd70);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[70*32 + 0 +: 8] <= 8'hb3;
@@ -1011,7 +1011,7 @@ module game_ffmem (
       if (hit_70 & b_be_i[3]) mem[70*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_71 = b_req_i & b_we_i & (b_word == AW'd71);
+  wire hit_71 = b_req_i & b_we_i & (b_word == 7'd71);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[71*32 + 0 +: 8] <= 8'h93;
@@ -1025,7 +1025,7 @@ module game_ffmem (
       if (hit_71 & b_be_i[3]) mem[71*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_72 = b_req_i & b_we_i & (b_word == AW'd72);
+  wire hit_72 = b_req_i & b_we_i & (b_word == 7'd72);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[72*32 + 0 +: 8] <= 8'h6f;
@@ -1039,7 +1039,7 @@ module game_ffmem (
       if (hit_72 & b_be_i[3]) mem[72*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_73 = b_req_i & b_we_i & (b_word == AW'd73);
+  wire hit_73 = b_req_i & b_we_i & (b_word == 7'd73);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[73*32 + 0 +: 8] <= 8'h33;
@@ -1053,7 +1053,7 @@ module game_ffmem (
       if (hit_73 & b_be_i[3]) mem[73*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_74 = b_req_i & b_we_i & (b_word == AW'd74);
+  wire hit_74 = b_req_i & b_we_i & (b_word == 7'd74);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[74*32 + 0 +: 8] <= 8'h33;
@@ -1067,7 +1067,7 @@ module game_ffmem (
       if (hit_74 & b_be_i[3]) mem[74*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_75 = b_req_i & b_we_i & (b_word == AW'd75);
+  wire hit_75 = b_req_i & b_we_i & (b_word == 7'd75);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[75*32 + 0 +: 8] <= 8'h33;
@@ -1081,7 +1081,7 @@ module game_ffmem (
       if (hit_75 & b_be_i[3]) mem[75*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_76 = b_req_i & b_we_i & (b_word == AW'd76);
+  wire hit_76 = b_req_i & b_we_i & (b_word == 7'd76);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[76*32 + 0 +: 8] <= 8'h33;
@@ -1095,7 +1095,7 @@ module game_ffmem (
       if (hit_76 & b_be_i[3]) mem[76*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_77 = b_req_i & b_we_i & (b_word == AW'd77);
+  wire hit_77 = b_req_i & b_we_i & (b_word == 7'd77);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[77*32 + 0 +: 8] <= 8'h33;
@@ -1109,7 +1109,7 @@ module game_ffmem (
       if (hit_77 & b_be_i[3]) mem[77*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_78 = b_req_i & b_we_i & (b_word == AW'd78);
+  wire hit_78 = b_req_i & b_we_i & (b_word == 7'd78);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[78*32 + 0 +: 8] <= 8'h23;
@@ -1123,7 +1123,7 @@ module game_ffmem (
       if (hit_78 & b_be_i[3]) mem[78*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_79 = b_req_i & b_we_i & (b_word == AW'd79);
+  wire hit_79 = b_req_i & b_we_i & (b_word == 7'd79);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[79*32 + 0 +: 8] <= 8'h13;
@@ -1137,7 +1137,7 @@ module game_ffmem (
       if (hit_79 & b_be_i[3]) mem[79*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_80 = b_req_i & b_we_i & (b_word == AW'd80);
+  wire hit_80 = b_req_i & b_we_i & (b_word == 7'd80);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[80*32 + 0 +: 8] <= 8'he3;
@@ -1151,7 +1151,7 @@ module game_ffmem (
       if (hit_80 & b_be_i[3]) mem[80*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_81 = b_req_i & b_we_i & (b_word == AW'd81);
+  wire hit_81 = b_req_i & b_we_i & (b_word == 7'd81);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[81*32 + 0 +: 8] <= 8'h93;
@@ -1165,7 +1165,7 @@ module game_ffmem (
       if (hit_81 & b_be_i[3]) mem[81*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_82 = b_req_i & b_we_i & (b_word == AW'd82);
+  wire hit_82 = b_req_i & b_we_i & (b_word == 7'd82);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[82*32 + 0 +: 8] <= 8'h93;
@@ -1179,7 +1179,7 @@ module game_ffmem (
       if (hit_82 & b_be_i[3]) mem[82*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_83 = b_req_i & b_we_i & (b_word == AW'd83);
+  wire hit_83 = b_req_i & b_we_i & (b_word == 7'd83);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[83*32 + 0 +: 8] <= 8'h63;
@@ -1193,7 +1193,7 @@ module game_ffmem (
       if (hit_83 & b_be_i[3]) mem[83*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_84 = b_req_i & b_we_i & (b_word == AW'd84);
+  wire hit_84 = b_req_i & b_we_i & (b_word == 7'd84);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[84*32 + 0 +: 8] <= 8'hb3;
@@ -1207,7 +1207,7 @@ module game_ffmem (
       if (hit_84 & b_be_i[3]) mem[84*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_85 = b_req_i & b_we_i & (b_word == AW'd85);
+  wire hit_85 = b_req_i & b_we_i & (b_word == 7'd85);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[85*32 + 0 +: 8] <= 8'h93;
@@ -1221,7 +1221,7 @@ module game_ffmem (
       if (hit_85 & b_be_i[3]) mem[85*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_86 = b_req_i & b_we_i & (b_word == AW'd86);
+  wire hit_86 = b_req_i & b_we_i & (b_word == 7'd86);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[86*32 + 0 +: 8] <= 8'h6f;
@@ -1235,7 +1235,7 @@ module game_ffmem (
       if (hit_86 & b_be_i[3]) mem[86*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_87 = b_req_i & b_we_i & (b_word == AW'd87);
+  wire hit_87 = b_req_i & b_we_i & (b_word == 7'd87);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[87*32 + 0 +: 8] <= 8'h93;
@@ -1249,7 +1249,7 @@ module game_ffmem (
       if (hit_87 & b_be_i[3]) mem[87*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_88 = b_req_i & b_we_i & (b_word == AW'd88);
+  wire hit_88 = b_req_i & b_we_i & (b_word == 7'd88);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[88*32 + 0 +: 8] <= 8'h63;
@@ -1263,7 +1263,7 @@ module game_ffmem (
       if (hit_88 & b_be_i[3]) mem[88*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_89 = b_req_i & b_we_i & (b_word == AW'd89);
+  wire hit_89 = b_req_i & b_we_i & (b_word == 7'd89);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[89*32 + 0 +: 8] <= 8'h93;
@@ -1277,7 +1277,7 @@ module game_ffmem (
       if (hit_89 & b_be_i[3]) mem[89*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_90 = b_req_i & b_we_i & (b_word == AW'd90);
+  wire hit_90 = b_req_i & b_we_i & (b_word == 7'd90);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[90*32 + 0 +: 8] <= 8'h93;
@@ -1291,7 +1291,7 @@ module game_ffmem (
       if (hit_90 & b_be_i[3]) mem[90*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_91 = b_req_i & b_we_i & (b_word == AW'd91);
+  wire hit_91 = b_req_i & b_we_i & (b_word == 7'd91);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[91*32 + 0 +: 8] <= 8'h93;
@@ -1305,7 +1305,7 @@ module game_ffmem (
       if (hit_91 & b_be_i[3]) mem[91*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_92 = b_req_i & b_we_i & (b_word == AW'd92);
+  wire hit_92 = b_req_i & b_we_i & (b_word == 7'd92);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[92*32 + 0 +: 8] <= 8'h63;
@@ -1319,7 +1319,7 @@ module game_ffmem (
       if (hit_92 & b_be_i[3]) mem[92*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_93 = b_req_i & b_we_i & (b_word == AW'd93);
+  wire hit_93 = b_req_i & b_we_i & (b_word == 7'd93);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[93*32 + 0 +: 8] <= 8'hb3;
@@ -1333,7 +1333,7 @@ module game_ffmem (
       if (hit_93 & b_be_i[3]) mem[93*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_94 = b_req_i & b_we_i & (b_word == AW'd94);
+  wire hit_94 = b_req_i & b_we_i & (b_word == 7'd94);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[94*32 + 0 +: 8] <= 8'h93;
@@ -1347,7 +1347,7 @@ module game_ffmem (
       if (hit_94 & b_be_i[3]) mem[94*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_95 = b_req_i & b_we_i & (b_word == AW'd95);
+  wire hit_95 = b_req_i & b_we_i & (b_word == 7'd95);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[95*32 + 0 +: 8] <= 8'h6f;
@@ -1361,7 +1361,7 @@ module game_ffmem (
       if (hit_95 & b_be_i[3]) mem[95*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_96 = b_req_i & b_we_i & (b_word == AW'd96);
+  wire hit_96 = b_req_i & b_we_i & (b_word == 7'd96);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[96*32 + 0 +: 8] <= 8'h33;
@@ -1375,7 +1375,7 @@ module game_ffmem (
       if (hit_96 & b_be_i[3]) mem[96*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_97 = b_req_i & b_we_i & (b_word == AW'd97);
+  wire hit_97 = b_req_i & b_we_i & (b_word == 7'd97);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[97*32 + 0 +: 8] <= 8'h33;
@@ -1389,7 +1389,7 @@ module game_ffmem (
       if (hit_97 & b_be_i[3]) mem[97*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_98 = b_req_i & b_we_i & (b_word == AW'd98);
+  wire hit_98 = b_req_i & b_we_i & (b_word == 7'd98);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[98*32 + 0 +: 8] <= 8'h33;
@@ -1403,7 +1403,7 @@ module game_ffmem (
       if (hit_98 & b_be_i[3]) mem[98*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_99 = b_req_i & b_we_i & (b_word == AW'd99);
+  wire hit_99 = b_req_i & b_we_i & (b_word == 7'd99);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[99*32 + 0 +: 8] <= 8'h33;
@@ -1417,7 +1417,7 @@ module game_ffmem (
       if (hit_99 & b_be_i[3]) mem[99*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_100 = b_req_i & b_we_i & (b_word == AW'd100);
+  wire hit_100 = b_req_i & b_we_i & (b_word == 7'd100);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[100*32 + 0 +: 8] <= 8'h33;
@@ -1431,7 +1431,7 @@ module game_ffmem (
       if (hit_100 & b_be_i[3]) mem[100*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_101 = b_req_i & b_we_i & (b_word == AW'd101);
+  wire hit_101 = b_req_i & b_we_i & (b_word == 7'd101);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[101*32 + 0 +: 8] <= 8'h23;
@@ -1445,7 +1445,7 @@ module game_ffmem (
       if (hit_101 & b_be_i[3]) mem[101*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_102 = b_req_i & b_we_i & (b_word == AW'd102);
+  wire hit_102 = b_req_i & b_we_i & (b_word == 7'd102);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[102*32 + 0 +: 8] <= 8'h6f;
@@ -1459,7 +1459,7 @@ module game_ffmem (
       if (hit_102 & b_be_i[3]) mem[102*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_103 = b_req_i & b_we_i & (b_word == AW'd103);
+  wire hit_103 = b_req_i & b_we_i & (b_word == 7'd103);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[103*32 + 0 +: 8] <= 8'h93;
@@ -1473,7 +1473,7 @@ module game_ffmem (
       if (hit_103 & b_be_i[3]) mem[103*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_104 = b_req_i & b_we_i & (b_word == AW'd104);
+  wire hit_104 = b_req_i & b_we_i & (b_word == 7'd104);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[104*32 + 0 +: 8] <= 8'h23;
@@ -1487,7 +1487,7 @@ module game_ffmem (
       if (hit_104 & b_be_i[3]) mem[104*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_105 = b_req_i & b_we_i & (b_word == AW'd105);
+  wire hit_105 = b_req_i & b_we_i & (b_word == 7'd105);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[105*32 + 0 +: 8] <= 8'h93;
@@ -1501,7 +1501,7 @@ module game_ffmem (
       if (hit_105 & b_be_i[3]) mem[105*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_106 = b_req_i & b_we_i & (b_word == AW'd106);
+  wire hit_106 = b_req_i & b_we_i & (b_word == 7'd106);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[106*32 + 0 +: 8] <= 8'h23;
@@ -1515,7 +1515,7 @@ module game_ffmem (
       if (hit_106 & b_be_i[3]) mem[106*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_107 = b_req_i & b_we_i & (b_word == AW'd107);
+  wire hit_107 = b_req_i & b_we_i & (b_word == 7'd107);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[107*32 + 0 +: 8] <= 8'h83;
@@ -1529,7 +1529,7 @@ module game_ffmem (
       if (hit_107 & b_be_i[3]) mem[107*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_108 = b_req_i & b_we_i & (b_word == AW'd108);
+  wire hit_108 = b_req_i & b_we_i & (b_word == 7'd108);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[108*32 + 0 +: 8] <= 8'hb7;
@@ -1543,7 +1543,7 @@ module game_ffmem (
       if (hit_108 & b_be_i[3]) mem[108*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_109 = b_req_i & b_we_i & (b_word == AW'd109);
+  wire hit_109 = b_req_i & b_we_i & (b_word == 7'd109);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[109*32 + 0 +: 8] <= 8'h93;
@@ -1557,7 +1557,7 @@ module game_ffmem (
       if (hit_109 & b_be_i[3]) mem[109*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_110 = b_req_i & b_we_i & (b_word == AW'd110);
+  wire hit_110 = b_req_i & b_we_i & (b_word == 7'd110);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[110*32 + 0 +: 8] <= 8'h03;
@@ -1571,7 +1571,7 @@ module game_ffmem (
       if (hit_110 & b_be_i[3]) mem[110*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_111 = b_req_i & b_we_i & (b_word == AW'd111);
+  wire hit_111 = b_req_i & b_we_i & (b_word == 7'd111);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[111*32 + 0 +: 8] <= 8'hb3;
@@ -1585,7 +1585,7 @@ module game_ffmem (
       if (hit_111 & b_be_i[3]) mem[111*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_112 = b_req_i & b_we_i & (b_word == AW'd112);
+  wire hit_112 = b_req_i & b_we_i & (b_word == 7'd112);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[112*32 + 0 +: 8] <= 8'he3;
@@ -1599,7 +1599,7 @@ module game_ffmem (
       if (hit_112 & b_be_i[3]) mem[112*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_113 = b_req_i & b_we_i & (b_word == AW'd113);
+  wire hit_113 = b_req_i & b_we_i & (b_word == 7'd113);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[113*32 + 0 +: 8] <= 8'h6f;
@@ -1613,7 +1613,7 @@ module game_ffmem (
       if (hit_113 & b_be_i[3]) mem[113*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_114 = b_req_i & b_we_i & (b_word == AW'd114);
+  wire hit_114 = b_req_i & b_we_i & (b_word == 7'd114);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[114*32 + 0 +: 8] <= 8'h00;
@@ -1627,7 +1627,7 @@ module game_ffmem (
       if (hit_114 & b_be_i[3]) mem[114*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_115 = b_req_i & b_we_i & (b_word == AW'd115);
+  wire hit_115 = b_req_i & b_we_i & (b_word == 7'd115);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[115*32 + 0 +: 8] <= 8'h00;
@@ -1641,7 +1641,7 @@ module game_ffmem (
       if (hit_115 & b_be_i[3]) mem[115*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_116 = b_req_i & b_we_i & (b_word == AW'd116);
+  wire hit_116 = b_req_i & b_we_i & (b_word == 7'd116);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[116*32 + 0 +: 8] <= 8'h00;
@@ -1655,7 +1655,7 @@ module game_ffmem (
       if (hit_116 & b_be_i[3]) mem[116*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_117 = b_req_i & b_we_i & (b_word == AW'd117);
+  wire hit_117 = b_req_i & b_we_i & (b_word == 7'd117);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[117*32 + 0 +: 8] <= 8'h00;
@@ -1669,7 +1669,7 @@ module game_ffmem (
       if (hit_117 & b_be_i[3]) mem[117*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_118 = b_req_i & b_we_i & (b_word == AW'd118);
+  wire hit_118 = b_req_i & b_we_i & (b_word == 7'd118);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[118*32 + 0 +: 8] <= 8'h00;
@@ -1683,7 +1683,7 @@ module game_ffmem (
       if (hit_118 & b_be_i[3]) mem[118*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_119 = b_req_i & b_we_i & (b_word == AW'd119);
+  wire hit_119 = b_req_i & b_we_i & (b_word == 7'd119);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[119*32 + 0 +: 8] <= 8'h00;
@@ -1697,7 +1697,7 @@ module game_ffmem (
       if (hit_119 & b_be_i[3]) mem[119*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_120 = b_req_i & b_we_i & (b_word == AW'd120);
+  wire hit_120 = b_req_i & b_we_i & (b_word == 7'd120);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[120*32 + 0 +: 8] <= 8'h00;
@@ -1711,7 +1711,7 @@ module game_ffmem (
       if (hit_120 & b_be_i[3]) mem[120*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_121 = b_req_i & b_we_i & (b_word == AW'd121);
+  wire hit_121 = b_req_i & b_we_i & (b_word == 7'd121);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[121*32 + 0 +: 8] <= 8'h00;
@@ -1725,7 +1725,7 @@ module game_ffmem (
       if (hit_121 & b_be_i[3]) mem[121*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_122 = b_req_i & b_we_i & (b_word == AW'd122);
+  wire hit_122 = b_req_i & b_we_i & (b_word == 7'd122);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[122*32 + 0 +: 8] <= 8'h00;
@@ -1739,7 +1739,7 @@ module game_ffmem (
       if (hit_122 & b_be_i[3]) mem[122*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_123 = b_req_i & b_we_i & (b_word == AW'd123);
+  wire hit_123 = b_req_i & b_we_i & (b_word == 7'd123);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[123*32 + 0 +: 8] <= 8'h00;
@@ -1753,7 +1753,7 @@ module game_ffmem (
       if (hit_123 & b_be_i[3]) mem[123*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_124 = b_req_i & b_we_i & (b_word == AW'd124);
+  wire hit_124 = b_req_i & b_we_i & (b_word == 7'd124);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[124*32 + 0 +: 8] <= 8'h00;
@@ -1767,7 +1767,7 @@ module game_ffmem (
       if (hit_124 & b_be_i[3]) mem[124*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_125 = b_req_i & b_we_i & (b_word == AW'd125);
+  wire hit_125 = b_req_i & b_we_i & (b_word == 7'd125);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[125*32 + 0 +: 8] <= 8'h00;
@@ -1781,7 +1781,7 @@ module game_ffmem (
       if (hit_125 & b_be_i[3]) mem[125*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_126 = b_req_i & b_we_i & (b_word == AW'd126);
+  wire hit_126 = b_req_i & b_we_i & (b_word == 7'd126);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[126*32 + 0 +: 8] <= 8'h00;
@@ -1795,7 +1795,7 @@ module game_ffmem (
       if (hit_126 & b_be_i[3]) mem[126*32 + 24 +: 8] <= b_wdata_i[24 +: 8];
     end
   end
-  wire hit_127 = b_req_i & b_we_i & (b_word == AW'd127);
+  wire hit_127 = b_req_i & b_we_i & (b_word == 7'd127);
   always @(posedge clk_i or negedge rst_ni) begin
     if (!rst_ni) begin
       mem[127*32 + 0 +: 8] <= 8'h00;
