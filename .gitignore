@@ -2,3 +2,4 @@ librelane/
 runs/
 *.AppImage
 .ciel/
+__pycache__/
