@@ -5,115 +5,118 @@
  |  Distributed under an ISC-like license, type "license" to see terms        |
  \----------------------------------------------------------------------------/
  Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)
-[INFO] Using SDC file '/home/samu/Documentos/Arqui/Proyecto_3_arquitectura_de_computadores/runs/fpga_original/09-yosys-synthesis/synthesis.abc.sdc' for ABC…
 
-1. Executing Verilog-2005 frontend: game_top.v
+1. Executing Liberty frontend: /home/samu/.ciel/gf180mcuD/libs.ref/gf180mcu_fd_sc_mcu7t5v0/lib/gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00.lib
+Imported 229 cell types from liberty file.
+[INFO] Using SDC file '/home/samu/Documentos/Arqui/Proyecto_3_arquitectura_de_computadores/runs/fpga_original/06-yosys-synthesis/synthesis.abc.sdc' for ABC…
+
+2. Executing Verilog-2005 frontend: game_top.v
 Parsing SystemVerilog input from `game_top.v' to AST representation.
 Storing AST representation for module `$abstract\game_top'.
 Successfully finished Verilog frontend.
 
-2. Executing Verilog-2005 frontend: rtl/fpga_stub.v
+3. Executing Verilog-2005 frontend: rtl/fpga_stub.v
 Parsing SystemVerilog input from `rtl/fpga_stub.v' to AST representation.
 Storing AST representation for module `$abstract\SB_RAM40_4K'.
 Successfully finished Verilog frontend.
 
-3. Executing Verilog-2005 frontend: rtl/pochoco_soc.v
+4. Executing Verilog-2005 frontend: rtl/pochoco_soc.v
 Parsing SystemVerilog input from `rtl/pochoco_soc.v' to AST representation.
 Storing AST representation for module `$abstract\pochoco_soc'.
 Successfully finished Verilog frontend.
 
-4. Executing Verilog-2005 frontend: rtl/pochoco_ram.v
+5. Executing Verilog-2005 frontend: rtl/pochoco_ram.v
 Parsing SystemVerilog input from `rtl/pochoco_ram.v' to AST representation.
 Storing AST representation for module `$abstract\pochoco_ram'.
 Successfully finished Verilog frontend.
 
-5. Executing Verilog-2005 frontend: rtl/pochoco_periph.v
+6. Executing Verilog-2005 frontend: rtl/pochoco_periph.v
 Parsing SystemVerilog input from `rtl/pochoco_periph.v' to AST representation.
 Storing AST representation for module `$abstract\pochoco_periph'.
 Successfully finished Verilog frontend.
 
-6. Executing Verilog-2005 frontend: rtl/pochoco_spi_slave.v
+7. Executing Verilog-2005 frontend: rtl/pochoco_spi_slave.v
 Parsing SystemVerilog input from `rtl/pochoco_spi_slave.v' to AST representation.
 Storing AST representation for module `$abstract\pochoco_spi_slave'.
 Successfully finished Verilog frontend.
 
-7. Executing Verilog-2005 frontend: rtl/espino_core/espino_core.v
+8. Executing Verilog-2005 frontend: rtl/espino_core/espino_core.v
 Parsing SystemVerilog input from `rtl/espino_core/espino_core.v' to AST representation.
 Storing AST representation for module `$abstract\espino_core'.
 Successfully finished Verilog frontend.
 
-8. Executing Verilog-2005 frontend: rtl/espino_core/espino_if_stage.v
+9. Executing Verilog-2005 frontend: rtl/espino_core/espino_if_stage.v
 Parsing SystemVerilog input from `rtl/espino_core/espino_if_stage.v' to AST representation.
 Storing AST representation for module `$abstract\espino_if_stage'.
 Successfully finished Verilog frontend.
 
-9. Executing Verilog-2005 frontend: rtl/espino_core/espino_id_stage.v
+10. Executing Verilog-2005 frontend: rtl/espino_core/espino_id_stage.v
 Parsing SystemVerilog input from `rtl/espino_core/espino_id_stage.v' to AST representation.
 Storing AST representation for module `$abstract\espino_id_stage'.
 Successfully finished Verilog frontend.
 
-10. Executing Verilog-2005 frontend: rtl/espino_core/espino_decoder.v
+11. Executing Verilog-2005 frontend: rtl/espino_core/espino_decoder.v
 Parsing SystemVerilog input from `rtl/espino_core/espino_decoder.v' to AST representation.
 Storing AST representation for module `$abstract\espino_decoder'.
 Successfully finished Verilog frontend.
 
-11. Executing Verilog-2005 frontend: rtl/espino_core/espino_controller.v
+12. Executing Verilog-2005 frontend: rtl/espino_core/espino_controller.v
 Parsing SystemVerilog input from `rtl/espino_core/espino_controller.v' to AST representation.
 Storing AST representation for module `$abstract\espino_controller'.
 Successfully finished Verilog frontend.
 
-12. Executing Verilog-2005 frontend: rtl/espino_core/espino_alu.v
+13. Executing Verilog-2005 frontend: rtl/espino_core/espino_alu.v
 Parsing SystemVerilog input from `rtl/espino_core/espino_alu.v' to AST representation.
 Storing AST representation for module `$abstract\espino_alu'.
 Successfully finished Verilog frontend.
 
-13. Executing Verilog-2005 frontend: rtl/espino_core/espino_register_file.v
+14. Executing Verilog-2005 frontend: rtl/espino_core/espino_register_file.v
 Parsing SystemVerilog input from `rtl/espino_core/espino_register_file.v' to AST representation.
 Storing AST representation for module `$abstract\espino_regbank32'.
 Storing AST representation for module `$abstract\espino_register_file'.
 Successfully finished Verilog frontend.
 
-14. Executing Verilog-2005 frontend: rtl/espino_core/espino_load_store_unit.v
+15. Executing Verilog-2005 frontend: rtl/espino_core/espino_load_store_unit.v
 Parsing SystemVerilog input from `rtl/espino_core/espino_load_store_unit.v' to AST representation.
 Storing AST representation for module `$abstract\espino_load_store_unit'.
 Successfully finished Verilog frontend.
 
-15. Executing HIERARCHY pass (managing design hierarchy).
+16. Executing HIERARCHY pass (managing design hierarchy).
 
-16. Executing AST frontend in derive mode using pre-parsed AST for module `\game_top'.
+17. Executing AST frontend in derive mode using pre-parsed AST for module `\game_top'.
 Generating RTLIL representation for module `\game_top'.
 
-16.1. Analyzing design hierarchy..
+17.1. Analyzing design hierarchy..
 Top module:  \game_top
 Parameter \MemFile = 88'0111001101110111001011110110011101100001011011010110010100101110011010000110010101111000
 
-16.2. Executing AST frontend in derive mode using pre-parsed AST for module `\pochoco_soc'.
+17.2. Executing AST frontend in derive mode using pre-parsed AST for module `\pochoco_soc'.
 Parameter \MemFile = 88'0111001101110111001011110110011101100001011011010110010100101110011010000110010101111000
 Generating RTLIL representation for module `$paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc'.
 
-16.3. Analyzing design hierarchy..
+17.3. Analyzing design hierarchy..
 Top module:  \game_top
 Used module:     $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc
 
-16.4. Executing AST frontend in derive mode using pre-parsed AST for module `\pochoco_spi_slave'.
+17.4. Executing AST frontend in derive mode using pre-parsed AST for module `\pochoco_spi_slave'.
 Generating RTLIL representation for module `\pochoco_spi_slave'.
 
-16.5. Executing AST frontend in derive mode using pre-parsed AST for module `\pochoco_periph'.
+17.5. Executing AST frontend in derive mode using pre-parsed AST for module `\pochoco_periph'.
 Generating RTLIL representation for module `\pochoco_periph'.
 Parameter \NumWords = 512
 Parameter \MemFile = 88'0111001101110111001011110110011101100001011011010110010100101110011010000110010101111000
 
-16.6. Executing AST frontend in derive mode using pre-parsed AST for module `\pochoco_ram'.
+17.6. Executing AST frontend in derive mode using pre-parsed AST for module `\pochoco_ram'.
 Parameter \NumWords = 512
 Parameter \MemFile = 88'0111001101110111001011110110011101100001011011010110010100101110011010000110010101111000
 Generating RTLIL representation for module `$paramod$fc02219863c7f37f95459e5a98f2197f6f615ddf\pochoco_ram'.
 Parameter \BootAddr = 0
 
-16.7. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_core'.
+17.7. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_core'.
 Parameter \BootAddr = 0
 Generating RTLIL representation for module `$paramod\espino_core\BootAddr=32'00000000000000000000000000000000'.
 
-16.8. Analyzing design hierarchy..
+17.8. Analyzing design hierarchy..
 Top module:  \game_top
 Used module:     $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc
 Used module:         \pochoco_spi_slave
@@ -121,24 +124,24 @@ Used module:         \pochoco_periph
 Used module:         $paramod$fc02219863c7f37f95459e5a98f2197f6f615ddf\pochoco_ram
 Used module:         $paramod\espino_core\BootAddr=32'00000000000000000000000000000000
 
-16.9. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_controller'.
+17.9. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_controller'.
 Generating RTLIL representation for module `\espino_controller'.
 
-16.10. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_load_store_unit'.
+17.10. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_load_store_unit'.
 Generating RTLIL representation for module `\espino_load_store_unit'.
 
-16.11. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_register_file'.
+17.11. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_register_file'.
 Generating RTLIL representation for module `\espino_register_file'.
 
-16.12. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_id_stage'.
+17.12. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_id_stage'.
 Generating RTLIL representation for module `\espino_id_stage'.
 Parameter \BootAddr = 0
 
-16.13. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_if_stage'.
+17.13. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_if_stage'.
 Parameter \BootAddr = 0
 Generating RTLIL representation for module `$paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000'.
 
-16.14. Analyzing design hierarchy..
+17.14. Analyzing design hierarchy..
 Top module:  \game_top
 Used module:     $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc
 Used module:         \pochoco_spi_slave
@@ -151,16 +154,16 @@ Used module:             \espino_register_file
 Used module:             \espino_id_stage
 Used module:             $paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000
 
-16.15. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_alu'.
+17.15. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_alu'.
 Generating RTLIL representation for module `\espino_alu'.
 
-16.16. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_decoder'.
+17.16. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_decoder'.
 Generating RTLIL representation for module `\espino_decoder'.
 
-16.17. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_regbank32'.
+17.17. Executing AST frontend in derive mode using pre-parsed AST for module `\espino_regbank32'.
 Generating RTLIL representation for module `\espino_regbank32'.
 
-16.18. Analyzing design hierarchy..
+17.18. Analyzing design hierarchy..
 Top module:  \game_top
 Used module:     $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc
 Used module:         \pochoco_spi_slave
@@ -176,7 +179,7 @@ Used module:                 \espino_alu
 Used module:                 \espino_decoder
 Used module:             $paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000
 
-16.19. Analyzing design hierarchy..
+17.19. Analyzing design hierarchy..
 Top module:  \game_top
 Used module:     $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc
 Used module:         \pochoco_spi_slave
@@ -192,7 +195,7 @@ Used module:                 \espino_alu
 Used module:                 \espino_decoder
 Used module:             $paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000
 
-16.20. Analyzing design hierarchy..
+17.20. Analyzing design hierarchy..
 Top module:  \game_top
 Used module:     $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc
 Used module:         \pochoco_spi_slave
@@ -224,11 +227,11 @@ Removing unused module `$abstract\game_top'.
 Removed 14 unused modules.
 Renaming module game_top to game_top.
 
-17. Executing ATTRMAP pass (move or copy attributes).
+18. Executing ATTRMAP pass (move or copy attributes).
 
-18. Executing HIERARCHY pass (managing design hierarchy).
+19. Executing HIERARCHY pass (managing design hierarchy).
 
-18.1. Analyzing design hierarchy..
+19.1. Analyzing design hierarchy..
 Top module:  \game_top
 Used module:     $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc
 Used module:         \pochoco_spi_slave
@@ -244,7 +247,7 @@ Used module:                 \espino_alu
 Used module:                 \espino_decoder
 Used module:             $paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000
 
-18.2. Analyzing design hierarchy..
+19.2. Analyzing design hierarchy..
 Top module:  \game_top
 Used module:     $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc
 Used module:         \pochoco_spi_slave
@@ -261,12 +264,12 @@ Used module:                 \espino_decoder
 Used module:             $paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000
 Removed 0 unused modules.
 
-19. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+20. Executing PROC_CLEAN pass (remove empty switches from decision trees).
 Found and cleaned up 1 empty switch in `$paramod$fc02219863c7f37f95459e5a98f2197f6f615ddf\pochoco_ram.$proc$rtl/pochoco_ram.v:35$121'.
 Removing empty process `$paramod$fc02219863c7f37f95459e5a98f2197f6f615ddf\pochoco_ram.$proc$rtl/pochoco_ram.v:35$121'.
 Cleaned up 1 empty switch.
 
-20. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
+21. Executing PROC_RMDEAD pass (remove dead branches from decision trees).
 Removed 2 dead cases from process $proc$rtl/espino_core/espino_decoder.v:106$193 in module espino_decoder.
 Marked 9 switch rules as full_case in process $proc$rtl/espino_core/espino_decoder.v:106$193 in module espino_decoder.
 Marked 1 switch rules as full_case in process $proc$rtl/espino_core/espino_alu.v:63$186 in module espino_alu.
@@ -296,15 +299,15 @@ Marked 1 switch rules as full_case in process $proc$rtl/pochoco_spi_slave.v:41$2
 Marked 1 switch rules as full_case in process $proc$rtl/pochoco_soc.v:77$12 in module $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc.
 Removed a total of 4 dead cases.
 
-21. Executing PROC_PRUNE pass (remove redundant assignments in processes).
+22. Executing PROC_PRUNE pass (remove redundant assignments in processes).
 Removed 6 redundant assignments.
 Promoted 43 assignments to connections.
 
-22. Executing PROC_INIT pass (extract init attributes).
+23. Executing PROC_INIT pass (extract init attributes).
 Found init rule in `$paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc.$proc$rtl/pochoco_soc.v:35$20'.
   Set init value: \por_cnt = 4'0000
 
-23. Executing PROC_ARST pass (detect async resets in processes).
+24. Executing PROC_ARST pass (detect async resets in processes).
 Found async reset \rst_ni in `$paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000.$proc$rtl/espino_core/espino_if_stage.v:37$175'.
 Found async reset \rst_ni in `\espino_id_stage.$proc$rtl/espino_core/espino_id_stage.v:63$155'.
 Found async reset \rst_ni in `\espino_load_store_unit.$proc$rtl/espino_core/espino_load_store_unit.v:48$136'.
@@ -318,11 +321,11 @@ Found async reset \rst_ni in `\pochoco_spi_slave.$proc$rtl/pochoco_spi_slave.v:6
 Found async reset \rst_ni in `\pochoco_spi_slave.$proc$rtl/pochoco_spi_slave.v:41$25'.
 Found async reset \rst_ni in `$paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc.$proc$rtl/pochoco_soc.v:77$12'.
 
-24. Executing PROC_ROM pass (convert switches to ROMs).
+25. Executing PROC_ROM pass (convert switches to ROMs).
 Converted 2 switches.
 <suppressed ~41 debug messages>
 
-25. Executing PROC_MUX pass (convert decision trees to multiplexers).
+26. Executing PROC_MUX pass (convert decision trees to multiplexers).
 Creating decoders for process `\espino_decoder.$proc$rtl/espino_core/espino_decoder.v:106$193'.
      1/29: $9\illegal_insn_o[0:0]
      2/29: $8\illegal_insn_o[0:0]
@@ -437,7 +440,7 @@ Creating decoders for process `$paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40
 Creating decoders for process `$paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc.$proc$rtl/pochoco_soc.v:37$1'.
      1/1: $0\por_cnt[3:0]
 
-26. Executing PROC_DLATCH pass (convert process syncs to latches).
+27. Executing PROC_DLATCH pass (convert process syncs to latches).
 No latch inferred for signal `\espino_decoder.\rf_we_o' from process `\espino_decoder.$proc$rtl/espino_core/espino_decoder.v:106$193'.
 No latch inferred for signal `\espino_decoder.\lsu_req_o' from process `\espino_decoder.$proc$rtl/espino_core/espino_decoder.v:106$193'.
 No latch inferred for signal `\espino_decoder.\lsu_we_o' from process `\espino_decoder.$proc$rtl/espino_core/espino_decoder.v:106$193'.
@@ -468,7 +471,7 @@ No latch inferred for signal `\pochoco_periph.\hex2seg$func$rtl/pochoco_periph.v
 No latch inferred for signal `\pochoco_periph.\hex2seg$func$rtl/pochoco_periph.v:97$52.$result' from process `\pochoco_periph.$proc$rtl/pochoco_periph.v:97$65'.
 No latch inferred for signal `\pochoco_periph.\hex2seg$func$rtl/pochoco_periph.v:97$52.hex' from process `\pochoco_periph.$proc$rtl/pochoco_periph.v:97$65'.
 
-27. Executing PROC_DFF pass (convert process syncs to FFs).
+28. Executing PROC_DFF pass (convert process syncs to FFs).
 Creating register for signal `$paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000.\pc_q' using process `$paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000.$proc$rtl/espino_core/espino_if_stage.v:37$175'.
   created $adff cell `$procdff$759' with positive edge clock and positive level reset.
 Creating register for signal `$paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000.\pc_id_q' using process `$paramod\espino_if_stage\BootAddr=32'00000000000000000000000000000000.$proc$rtl/espino_core/espino_if_stage.v:37$175'.
@@ -542,9 +545,9 @@ Creating register for signal `$paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\
 Creating register for signal `$paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc.\por_cnt' using process `$paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc.$proc$rtl/pochoco_soc.v:37$1'.
   created $dff cell `$procdff$874' with positive edge clock.
 
-28. Executing PROC_MEMWR pass (convert process memory writes to cells).
+29. Executing PROC_MEMWR pass (convert process memory writes to cells).
 
-29. Executing PROC_CLEAN pass (remove empty switches from decision trees).
+30. Executing PROC_CLEAN pass (remove empty switches from decision trees).
 Found and cleaned up 9 empty switches in `\espino_decoder.$proc$rtl/espino_core/espino_decoder.v:106$193'.
 Removing empty process `espino_decoder.$proc$rtl/espino_core/espino_decoder.v:106$193'.
 Found and cleaned up 1 empty switch in `\espino_alu.$proc$rtl/espino_core/espino_alu.v:63$186'.
@@ -597,7 +600,7 @@ Found and cleaned up 1 empty switch in `$paramod$f4756d7e49d5fa9bb922ebe8814bda8
 Removing empty process `$paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc.$proc$rtl/pochoco_soc.v:37$1'.
 Cleaned up 43 empty switches.
 
-30. Executing CHECK pass (checking for obvious problems).
+31. Executing CHECK pass (checking for obvious problems).
 Checking module game_top...
 Checking module espino_regbank32...
 Checking module espino_decoder...
@@ -614,7 +617,7 @@ Checking module pochoco_spi_slave...
 Checking module $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc...
 Found and reported 0 problems.
 
-31. Executing OPT_EXPR pass (perform const folding).
+32. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 Optimizing module espino_regbank32.
 Optimizing module espino_decoder.
@@ -639,7 +642,7 @@ Optimizing module pochoco_spi_slave.
 Optimizing module $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc.
 <suppressed ~4 debug messages>
 
-32. Executing FLATTEN pass (flatten design).
+33. Executing FLATTEN pass (flatten design).
 Deleting now unused module espino_regbank32.
 Deleting now unused module espino_decoder.
 Deleting now unused module espino_alu.
@@ -655,19 +658,19 @@ Deleting now unused module pochoco_spi_slave.
 Deleting now unused module $paramod$f4756d7e49d5fa9bb922ebe8814bda888e4a3d40\pochoco_soc.
 <suppressed ~14 debug messages>
 
-33. Executing OPT_EXPR pass (perform const folding).
+34. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 <suppressed ~1 debug messages>
 
-34. Executing OPT_CLEAN pass (remove unused cells and wires).
+35. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 117 unused cells and 413 unused wires.
 <suppressed ~126 debug messages>
 
-35. Executing OPT_EXPR pass (perform const folding).
+36. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-36. Executing OPT_MERGE pass (detect identical cells).
+37. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 342 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
@@ -676,7 +679,7 @@ Finding duplicate cells in `\game_top'.
 <suppressed ~186 debug messages>
 Removed a total of 62 cells.
 
-37. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+38. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -702,7 +705,7 @@ Running muxtree optimizer on module \game_top..
 Removed 18 multiplexer ports.
 <suppressed ~179 debug messages>
 
-38. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+39. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
     New ctrl vector for $pmux cell $flatten\u_pochoco.\u_core.\u_id.\u_decoder.$procmux$293: $auto$opt_reduce.cc:137:opt_pmux$894
     New ctrl vector for $pmux cell $flatten\u_pochoco.\u_core.\u_id.\u_decoder.$procmux$306: { $auto$opt_reduce.cc:137:opt_pmux$898 $auto$opt_reduce.cc:137:opt_pmux$896 }
@@ -748,7 +751,7 @@ Removed 18 multiplexer ports.
   Optimizing cells in module \game_top.
 Performed a total of 16 changes.
 
-39. Executing OPT_MERGE pass (detect identical cells).
+40. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 270 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
@@ -757,20 +760,20 @@ Finding duplicate cells in `\game_top'.
 <suppressed ~3 debug messages>
 Removed a total of 1 cells.
 
-40. Executing OPT_DFF pass (perform DFF optimizations).
+41. Executing OPT_DFF pass (perform DFF optimizations).
 
-41. Executing OPT_CLEAN pass (remove unused cells and wires).
+42. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 1 unused cells and 82 unused wires.
 <suppressed ~2 debug messages>
 
-42. Executing OPT_EXPR pass (perform const folding).
+43. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 <suppressed ~1 debug messages>
 
-43. Rerunning OPT passes. (Maybe there is more to do…)
+44. Rerunning OPT passes. (Maybe there is more to do…)
 
-44. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+45. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -780,29 +783,29 @@ Running muxtree optimizer on module \game_top..
 Removed 2 multiplexer ports.
 <suppressed ~161 debug messages>
 
-45. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+46. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
 Performed a total of 0 changes.
 
-46. Executing OPT_MERGE pass (detect identical cells).
+47. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 267 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-47. Executing OPT_DFF pass (perform DFF optimizations).
+48. Executing OPT_DFF pass (perform DFF optimizations).
 
-48. Executing OPT_CLEAN pass (remove unused cells and wires).
+49. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 0 unused cells and 2 unused wires.
 <suppressed ~2 debug messages>
 
-49. Executing OPT_EXPR pass (perform const folding).
+50. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-50. Rerunning OPT passes. (Maybe there is more to do…)
+51. Rerunning OPT passes. (Maybe there is more to do…)
 
-51. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+52. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -810,53 +813,53 @@ Running muxtree optimizer on module \game_top..
 Removed 0 multiplexer ports.
 <suppressed ~161 debug messages>
 
-52. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+53. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
 Performed a total of 0 changes.
 
-53. Executing OPT_MERGE pass (detect identical cells).
+54. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 267 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-54. Executing OPT_DFF pass (perform DFF optimizations).
+55. Executing OPT_DFF pass (perform DFF optimizations).
 
-55. Executing OPT_CLEAN pass (remove unused cells and wires).
+56. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 
-56. Executing OPT_EXPR pass (perform const folding).
+57. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-57. Executing FSM pass (extract and optimize FSM).
+58. Executing FSM pass (extract and optimize FSM).
 
-57.1. Executing FSM_DETECT pass (finding FSMs in design).
+58.1. Executing FSM_DETECT pass (finding FSMs in design).
 
-57.2. Executing FSM_EXTRACT pass (extracting FSM from design).
+58.2. Executing FSM_EXTRACT pass (extracting FSM from design).
 
-57.3. Executing FSM_OPT pass (simple optimizations of FSMs).
+58.3. Executing FSM_OPT pass (simple optimizations of FSMs).
 
-57.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+58.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 
-57.5. Executing FSM_OPT pass (simple optimizations of FSMs).
+58.5. Executing FSM_OPT pass (simple optimizations of FSMs).
 
-57.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
+58.6. Executing FSM_RECODE pass (re-assigning FSM state encoding).
 
-57.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
+58.7. Executing FSM_INFO pass (dumping all available information on FSM cells).
 
-57.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
+58.8. Executing FSM_MAP pass (mapping FSMs to basic logic).
 
-58. Executing OPT_EXPR pass (perform const folding).
+59. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-59. Executing OPT_MERGE pass (detect identical cells).
+60. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 267 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-60. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+61. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -864,17 +867,17 @@ Running muxtree optimizer on module \game_top..
 Removed 0 multiplexer ports.
 <suppressed ~161 debug messages>
 
-61. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+62. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
 Performed a total of 0 changes.
 
-62. Executing OPT_MERGE pass (detect identical cells).
+63. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 267 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-63. Executing OPT_DFF pass (perform DFF optimizations).
+64. Executing OPT_DFF pass (perform DFF optimizations).
 Adding EN signal on $flatten\u_pochoco.\u_spi.$procdff$848 ($adff) from module game_top (D = $flatten\u_pochoco.\u_spi.$0\bit_cnt[3:0], Q = \u_pochoco.u_spi.bit_cnt).
 Adding EN signal on $flatten\u_pochoco.\u_spi.$procdff$843 ($adff) from module game_top (D = $flatten\u_pochoco.\u_spi.$0\tx_shift[7:0], Q = \u_pochoco.u_spi.tx_shift).
 Adding EN signal on $flatten\u_pochoco.\u_spi.$procdff$838 ($adff) from module game_top (D = { \u_pochoco.u_spi.rx_shift [6:0] \u_pochoco.u_spi.mosi_sync [1] }, Q = \u_pochoco.u_spi.rx_shift).
@@ -893,18 +896,18 @@ Adding EN signal on $flatten\u_pochoco.$procdff$874 ($dff) from module game_top 
 Adding EN signal on $flatten\u_pochoco.$procdff$873 ($adff) from module game_top (D = \u_pochoco.spi_sel, Q = \u_pochoco.rd_is_spi).
 Adding EN signal on $flatten\u_pochoco.$procdff$868 ($adff) from module game_top (D = \u_pochoco.per_sel, Q = \u_pochoco.rd_is_per).
 
-64. Executing OPT_CLEAN pass (remove unused cells and wires).
+65. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 18 unused cells and 18 unused wires.
 <suppressed ~19 debug messages>
 
-65. Executing OPT_EXPR pass (perform const folding).
+66. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 <suppressed ~3 debug messages>
 
-66. Rerunning OPT passes. (Maybe there is more to do…)
+67. Rerunning OPT passes. (Maybe there is more to do…)
 
-67. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+68. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -912,11 +915,11 @@ Running muxtree optimizer on module \game_top..
 Removed 0 multiplexer ports.
 <suppressed ~125 debug messages>
 
-68. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+69. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
 Performed a total of 0 changes.
 
-69. Executing OPT_MERGE pass (detect identical cells).
+70. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 261 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
@@ -925,19 +928,19 @@ Finding duplicate cells in `\game_top'.
 <suppressed ~6 debug messages>
 Removed a total of 2 cells.
 
-70. Executing OPT_DFF pass (perform DFF optimizations).
+71. Executing OPT_DFF pass (perform DFF optimizations).
 
-71. Executing OPT_CLEAN pass (remove unused cells and wires).
+72. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 0 unused cells and 2 unused wires.
 <suppressed ~1 debug messages>
 
-72. Executing OPT_EXPR pass (perform const folding).
+73. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-73. Rerunning OPT passes. (Maybe there is more to do…)
+74. Rerunning OPT passes. (Maybe there is more to do…)
 
-74. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+75. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -945,25 +948,25 @@ Running muxtree optimizer on module \game_top..
 Removed 0 multiplexer ports.
 <suppressed ~125 debug messages>
 
-75. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+76. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
 Performed a total of 0 changes.
 
-76. Executing OPT_MERGE pass (detect identical cells).
+77. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 259 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-77. Executing OPT_DFF pass (perform DFF optimizations).
+78. Executing OPT_DFF pass (perform DFF optimizations).
 
-78. Executing OPT_CLEAN pass (remove unused cells and wires).
+79. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 
-79. Executing OPT_EXPR pass (perform const folding).
+80. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-80. Executing WREDUCE pass (reducing word size of cells).
+81. Executing WREDUCE pass (reducing word size of cells).
 Removed top 28 address bits (of 32) from memory init port game_top.$flatten\u_pochoco.\u_periph.$auto$mem.cc:351:emit$203 ($flatten\u_pochoco.\u_periph.$auto$proc_rom.cc:155:do_switch$201).
 Removed top 28 address bits (of 32) from memory init port game_top.$flatten\u_pochoco.\u_periph.$auto$mem.cc:351:emit$207 ($flatten\u_pochoco.\u_periph.$auto$proc_rom.cc:155:do_switch$205).
 Removed top 23 address bits (of 32) from memory init port game_top.$flatten\u_pochoco.\u_ram.$meminit$\mem$rtl/pochoco_ram.v:36$120 (u_pochoco.u_ram.mem).
@@ -1011,14 +1014,14 @@ Removed top 16 bits (of 32) from wire game_top.$flatten\u_pochoco.\u_ram.$2$memw
 Removed top 8 bits (of 32) from wire game_top.$flatten\u_pochoco.\u_ram.$2$memwr$\mem$rtl/pochoco_ram.v:51$77_EN[31:0]$115.
 Removed top 24 bits (of 32) from wire game_top.$flatten\u_pochoco.\u_spi.$procmux$714_Y.
 
-81. Executing PEEPOPT pass (run peephole optimizers).
+82. Executing PEEPOPT pass (run peephole optimizers).
 
-82. Executing OPT_CLEAN pass (remove unused cells and wires).
+83. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 0 unused cells and 9 unused wires.
 <suppressed ~1 debug messages>
 
-83. Executing ALUMACC pass (create $alu and $macc cells).
+84. Executing ALUMACC pass (create $alu and $macc cells).
 Extracting $alu and $macc cells in module game_top:
   creating $macc model for $flatten\u_pochoco.$add$rtl/pochoco_soc.v:38$3 ($add).
   creating $macc model for $flatten\u_pochoco.\u_core.\u_id.$add$rtl/espino_core/espino_id_stage.v:135$165 ($add).
@@ -1049,19 +1052,19 @@ Extracting $alu and $macc cells in module game_top:
   creating $alu cell for $flatten\u_pochoco.\u_spi.$add$rtl/pochoco_spi_slave.v:80$38: $auto$alumacc.cc:512:replace_alu$988
   created 8 $alu and 0 $macc cells.
 
-84. Executing SHARE pass (SAT-based resource sharing).
+85. Executing SHARE pass (SAT-based resource sharing).
 
-85. Executing OPT_EXPR pass (perform const folding).
+86. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 <suppressed ~1 debug messages>
 
-86. Executing OPT_MERGE pass (detect identical cells).
+87. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 259 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-87. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+88. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -1069,11 +1072,11 @@ Running muxtree optimizer on module \game_top..
 Removed 0 multiplexer ports.
 <suppressed ~125 debug messages>
 
-88. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+89. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
 Performed a total of 0 changes.
 
-89. Executing OPT_MERGE pass (detect identical cells).
+90. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 259 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
@@ -1082,7 +1085,7 @@ Finding duplicate cells in `\game_top'.
 <suppressed ~3 debug messages>
 Removed a total of 1 cells.
 
-90. Executing OPT_DFF pass (perform DFF optimizations).
+91. Executing OPT_DFF pass (perform DFF optimizations).
 Setting constant 0-bit at position 8 on $auto$ff.cc:337:slice$935 ($adffe) from module game_top.
 Setting constant 0-bit at position 9 on $auto$ff.cc:337:slice$935 ($adffe) from module game_top.
 Setting constant 0-bit at position 10 on $auto$ff.cc:337:slice$935 ($adffe) from module game_top.
@@ -1108,17 +1111,17 @@ Setting constant 0-bit at position 29 on $auto$ff.cc:337:slice$935 ($adffe) from
 Setting constant 0-bit at position 30 on $auto$ff.cc:337:slice$935 ($adffe) from module game_top.
 Setting constant 0-bit at position 31 on $auto$ff.cc:337:slice$935 ($adffe) from module game_top.
 
-91. Executing OPT_CLEAN pass (remove unused cells and wires).
+92. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 0 unused cells and 5 unused wires.
 <suppressed ~1 debug messages>
 
-92. Executing OPT_EXPR pass (perform const folding).
+93. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-93. Rerunning OPT passes. (Maybe there is more to do…)
+94. Rerunning OPT passes. (Maybe there is more to do…)
 
-94. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+95. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -1126,41 +1129,41 @@ Running muxtree optimizer on module \game_top..
 Removed 0 multiplexer ports.
 <suppressed ~125 debug messages>
 
-95. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+96. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
 Performed a total of 0 changes.
 
-96. Executing OPT_MERGE pass (detect identical cells).
+97. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 258 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-97. Executing OPT_DFF pass (perform DFF optimizations).
+98. Executing OPT_DFF pass (perform DFF optimizations).
 
-98. Executing OPT_CLEAN pass (remove unused cells and wires).
+99. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 
-99. Executing OPT_EXPR pass (perform const folding).
+100. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-100. Executing MEMORY pass.
+101. Executing MEMORY pass.
 
-100.1. Executing OPT_MEM pass (optimize memories).
+101.1. Executing OPT_MEM pass (optimize memories).
 Performed a total of 96 transformations.
 
-100.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
+101.2. Executing OPT_MEM_PRIORITY pass (removing unnecessary memory write priority relations).
 Performed a total of 6 transformations.
 
-100.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
+101.3. Executing OPT_MEM_FEEDBACK pass (finding memory read-to-write feedback paths).
   Analyzing game_top.u_pochoco.u_ram.mem write port 0.
   Analyzing game_top.u_pochoco.u_ram.mem write port 1.
   Analyzing game_top.u_pochoco.u_ram.mem write port 2.
   Analyzing game_top.u_pochoco.u_ram.mem write port 3.
 
-100.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
+101.4. Executing MEMORY_BMUX2ROM pass (converting muxes to ROMs).
 
-100.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
+101.5. Executing MEMORY_DFF pass (merging $dff cells to $memrd).
 Checking read port `$flatten\u_pochoco.\u_periph.$auto$proc_rom.cc:155:do_switch$201'[0] in module `\game_top': no output FF found.
 Checking read port `$flatten\u_pochoco.\u_periph.$auto$proc_rom.cc:155:do_switch$205'[0] in module `\game_top': no output FF found.
 Checking read port `\u_pochoco.u_ram.mem'[0] in module `\game_top': merging output FF to cell.
@@ -1176,56 +1179,56 @@ Checking read port `\u_pochoco.u_ram.mem'[1] in module `\game_top': merging outp
 Checking read port address `$flatten\u_pochoco.\u_periph.$auto$proc_rom.cc:155:do_switch$201'[0] in module `\game_top': address FF has async set and/or reset, not supported.
 Checking read port address `$flatten\u_pochoco.\u_periph.$auto$proc_rom.cc:155:do_switch$205'[0] in module `\game_top': address FF has async set and/or reset, not supported.
 
-100.6. Executing OPT_CLEAN pass (remove unused cells and wires).
+101.6. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 2 unused cells and 66 unused wires.
 <suppressed ~3 debug messages>
 
-100.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
+101.7. Executing MEMORY_SHARE pass (consolidating $memrd/$memwr cells).
 Consolidating read ports of memory game_top.u_pochoco.u_ram.mem by address:
 Consolidating write ports of memory game_top.u_pochoco.u_ram.mem by address:
   Merging ports 0, 1 (address \u_pochoco.u_core.u_id.alu_result [10:2]).
   Merging ports 0, 2 (address \u_pochoco.u_core.u_id.alu_result [10:2]).
   Merging ports 0, 3 (address \u_pochoco.u_core.u_id.alu_result [10:2]).
 
-100.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
+101.8. Executing OPT_MEM_WIDEN pass (optimize memories where all ports are wide).
 Performed a total of 0 transformations.
 
-100.9. Executing OPT_CLEAN pass (remove unused cells and wires).
+101.9. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 8 unused cells and 8 unused wires.
 <suppressed ~9 debug messages>
 
-100.10. Executing MEMORY_COLLECT pass (generating $mem cells).
+101.10. Executing MEMORY_COLLECT pass (generating $mem cells).
 
-101. Executing OPT_CLEAN pass (remove unused cells and wires).
+102. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 
-102. Executing OPT_EXPR pass (perform const folding).
+103. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 <suppressed ~39 debug messages>
 
-103. Executing OPT_MERGE pass (detect identical cells).
+104. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 214 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-104. Executing OPT_DFF pass (perform DFF optimizations).
+105. Executing OPT_DFF pass (perform DFF optimizations).
 Adding EN signal on $auto$ff.cc:337:slice$946 ($adffe) from module game_top (D = \u_pochoco.u_core.u_if.pc_next [1:0], Q = \u_pochoco.u_core.u_if.pc_q [1:0]).
 
-105. Executing OPT_CLEAN pass (remove unused cells and wires).
+106. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 0 unused cells and 27 unused wires.
 <suppressed ~1 debug messages>
 
-106. Rerunning OPT passes (Removed registers in this run.)
+107. Rerunning OPT passes (Removed registers in this run.)
 
-107. Executing OPT_EXPR pass (perform const folding).
+108. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 <suppressed ~1 debug messages>
 
-108. Executing OPT_MERGE pass (detect identical cells).
+109. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 217 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
@@ -1234,14 +1237,14 @@ Finding duplicate cells in `\game_top'.
 <suppressed ~3 debug messages>
 Removed a total of 1 cells.
 
-109. Executing OPT_DFF pass (perform DFF optimizations).
+110. Executing OPT_DFF pass (perform DFF optimizations).
 
-110. Executing OPT_CLEAN pass (remove unused cells and wires).
+111. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 0 unused cells and 2 unused wires.
 <suppressed ~1 debug messages>
 
-111. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
+112. Executing MEMORY_MAP pass (converting memories to logic and flip-flops).
 Mapping memory $flatten\u_pochoco.\u_periph.$auto$proc_rom.cc:155:do_switch$201 in module \game_top:
   created 16 $dff cells and 0 static cells of width 7.
   read interface: 0 $dff and 15 $mux cells.
@@ -1257,17 +1260,17 @@ Extracted data FF from read port 1 of game_top.u_pochoco.u_ram.mem: $\u_pochoco.
   read interface: 2 $dff and 1022 $mux cells.
   write interface: 2048 write mux blocks.
 
-112. Executing OPT_EXPR pass (perform const folding).
+113. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 <suppressed ~19 debug messages>
 
-113. Executing OPT_MERGE pass (detect identical cells).
+114. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 6468 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-114. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+115. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -1275,7 +1278,7 @@ Running muxtree optimizer on module \game_top..
 Removed 0 multiplexer ports.
 <suppressed ~5212 debug messages>
 
-115. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+116. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
     Consolidated identical input bits for $mux cell $memory$flatten\u_pochoco.\u_periph.$auto$proc_rom.cc:155:do_switch$205$rdmux[0][3][6]$1156:
       Old ports: A=7'0111001, B=7'1011110, Y=$memory$flatten\u_pochoco.\u_periph.$auto$proc_rom.cc:155:do_switch$205$rdmux[0][2][3]$a$1136
@@ -1389,7 +1392,7 @@ Removed 0 multiplexer ports.
   Optimizing cells in module \game_top.
 Performed a total of 27 changes.
 
-116. Executing OPT_MERGE pass (detect identical cells).
+117. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 6468 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
@@ -1398,22 +1401,22 @@ Finding duplicate cells in `\game_top'.
 <suppressed ~30 debug messages>
 Removed a total of 10 cells.
 
-117. Executing OPT_SHARE pass.
+118. Executing OPT_SHARE pass.
 
-118. Executing OPT_DFF pass (perform DFF optimizations).
+119. Executing OPT_DFF pass (perform DFF optimizations).
 
-119. Executing OPT_CLEAN pass (remove unused cells and wires).
+120. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 1 unused cells and 1588 unused wires.
 <suppressed ~2 debug messages>
 
-120. Executing OPT_EXPR pass (perform const folding).
+121. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 <suppressed ~3 debug messages>
 
-121. Rerunning OPT passes. (Maybe there is more to do…)
+122. Rerunning OPT passes. (Maybe there is more to do…)
 
-122. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+123. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -1421,19 +1424,19 @@ Running muxtree optimizer on module \game_top..
 Removed 0 multiplexer ports.
 <suppressed ~6750 debug messages>
 
-123. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+124. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
 Performed a total of 0 changes.
 
-124. Executing OPT_MERGE pass (detect identical cells).
+125. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 6457 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-125. Executing OPT_SHARE pass.
+126. Executing OPT_SHARE pass.
 
-126. Executing OPT_DFF pass (perform DFF optimizations).
+127. Executing OPT_DFF pass (perform DFF optimizations).
 Adding EN signal on $memory\u_pochoco.u_ram.mem[9]$1180 ($dff) from module game_top (D = \u_pochoco.u_core.u_id.rf_rdata_b_i [7:0], Q = \u_pochoco.u_ram.mem[9] [7:0]).
 Adding EN signal on $memory\u_pochoco.u_ram.mem[9]$1180 ($dff) from module game_top (D = \u_pochoco.u_ram.b_wdata_i [15:8], Q = \u_pochoco.u_ram.mem[9] [15:8]).
 Adding EN signal on $memory\u_pochoco.u_ram.mem[9]$1180 ($dff) from module game_top (D = \u_pochoco.u_ram.b_wdata_i [23:16], Q = \u_pochoco.u_ram.mem[9] [23:16]).
@@ -3483,17 +3486,17 @@ Adding EN signal on $memory\u_pochoco.u_ram.mem[0]$1162 ($dff) from module game_
 Adding EN signal on $memory\u_pochoco.u_ram.mem[0]$1162 ($dff) from module game_top (D = \u_pochoco.u_ram.b_wdata_i [15:8], Q = \u_pochoco.u_ram.mem[0] [15:8]).
 Adding EN signal on $memory\u_pochoco.u_ram.mem[0]$1162 ($dff) from module game_top (D = \u_pochoco.u_core.u_id.rf_rdata_b_i [7:0], Q = \u_pochoco.u_ram.mem[0] [7:0]).
 
-127. Executing OPT_CLEAN pass (remove unused cells and wires).
+128. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 2048 unused cells and 2048 unused wires.
 <suppressed ~2049 debug messages>
 
-128. Executing OPT_EXPR pass (perform const folding).
+129. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-129. Rerunning OPT passes. (Maybe there is more to do…)
+130. Rerunning OPT passes. (Maybe there is more to do…)
 
-130. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+131. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   Evaluating internal representation of mux trees.
@@ -3501,29 +3504,29 @@ Running muxtree optimizer on module \game_top..
 Removed 0 multiplexer ports.
 <suppressed ~1118 debug messages>
 
-131. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+132. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
 Performed a total of 0 changes.
 
-132. Executing OPT_MERGE pass (detect identical cells).
+133. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 5945 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-133. Executing OPT_SHARE pass.
+134. Executing OPT_SHARE pass.
 
-134. Executing OPT_DFF pass (perform DFF optimizations).
+135. Executing OPT_DFF pass (perform DFF optimizations).
 
-135. Executing OPT_CLEAN pass (remove unused cells and wires).
+136. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 
-136. Executing OPT_EXPR pass (perform const folding).
+137. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-137. Executing TECHMAP pass (map to technology primitives).
+138. Executing TECHMAP pass (map to technology primitives).
 
-137.1. Executing Verilog-2005 frontend: /nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v
+138.1. Executing Verilog-2005 frontend: /nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v
 Parsing Verilog input from `/nix/store/f1q0w7rd0a4ny4hqvfxlhs4cmariidcy-yosys-0.62/bin/../share/yosys/techmap.v' to AST representation.
 Generating RTLIL representation for module `\_90_simplemap_bool_ops'.
 Generating RTLIL representation for module `\_90_simplemap_reduce_ops'.
@@ -3553,7 +3556,7 @@ Generating RTLIL representation for module `$connect'.
 Generating RTLIL representation for module `$input_port'.
 Successfully finished Verilog frontend.
 
-137.2. Continuing TECHMAP pass.
+138.2. Continuing TECHMAP pass.
 Using extmapper simplemap for cells of type $dffe.
 Using extmapper simplemap for cells of type $and.
 Using extmapper simplemap for cells of type $not.
@@ -3599,11 +3602,11 @@ Using template $paramod\_90_lcu_brent_kung\WIDTH=32'0000000000000000000000000010
 No more expansions possible.
 <suppressed ~8215 debug messages>
 
-138. Executing OPT_EXPR pass (perform const folding).
+139. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 <suppressed ~2096 debug messages>
 
-139. Executing OPT_MERGE pass (detect identical cells).
+140. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 54988 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
@@ -3618,47 +3621,47 @@ Finding duplicate cells in `\game_top'.
 <suppressed ~1275 debug messages>
 Removed a total of 425 cells.
 
-140. Executing OPT_DFF pass (perform DFF optimizations).
+141. Executing OPT_DFF pass (perform DFF optimizations).
 
-141. Executing OPT_CLEAN pass (remove unused cells and wires).
+142. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 141 unused cells and 1853 unused wires.
 <suppressed ~150 debug messages>
 
-142. Executing OPT_EXPR pass (perform const folding).
+143. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 <suppressed ~2 debug messages>
 
-143. Executing OPT_MERGE pass (detect identical cells).
+144. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 54420 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-144. Executing OPT_DFF pass (perform DFF optimizations).
+145. Executing OPT_DFF pass (perform DFF optimizations).
 
-145. Executing OPT_CLEAN pass (remove unused cells and wires).
+146. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 0 unused cells and 2 unused wires.
 <suppressed ~1 debug messages>
 
-146. Executing ABC pass (technology mapping using ABC).
+147. Executing ABC pass (technology mapping using ABC).
 
-146.1. Extracting gate netlist of module `\game_top' to `<abc-temp-dir>/input.blif'..
+147.1. Extracting gate netlist of module `\game_top' to `<abc-temp-dir>/input.blif'..
 Replacing 2 occurrences of constant undef bits with constant zero bits
 
-146.1.1. Executed ABC.
+147.1.1. Executed ABC.
 Extracted 37753 gates and 54456 wires to a netlist network with 16700 inputs and 2322 outputs.
 Running ABC script: <abc-temp-dir>/abc.script
 ABC: ======== ABC command line "source <abc-temp-dir>/abc.script"
 ABC: + read_blif <abc-temp-dir>/input.blif 
-ABC: + read_library /tmp/yosys-abc-KWVBpu/stdcells.genlib 
+ABC: + read_library /tmp/yosys-abc-0vCgen/stdcells.genlib 
 ABC: + strash 
 ABC: + dretime 
 ABC: + map 
 ABC: + write_blif <abc-temp-dir>/output.blif 
 
-146.1.2. Re-integrating ABC results.
+147.1.2. Re-integrating ABC results.
 ABC RESULTS:               AND cells:      107
 ABC RESULTS:            ANDNOT cells:     2832
 ABC RESULTS:               MUX cells:    33100
@@ -3675,13 +3678,13 @@ ABC RESULTS:          output signals:     2322
 Removing temp directory.
 Removing global temp directory.
 
-147. Executing OPT pass (performing simple optimizations).
+148. Executing OPT pass (performing simple optimizations).
 
-147.1. Executing OPT_EXPR pass (perform const folding).
+148.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 <suppressed ~8194 debug messages>
 
-147.2. Executing OPT_MERGE pass (detect identical cells).
+148.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 54475 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
@@ -3690,29 +3693,29 @@ Finding duplicate cells in `\game_top'.
 <suppressed ~12 debug messages>
 Removed a total of 4 cells.
 
-147.3. Executing OPT_DFF pass (perform DFF optimizations).
+148.3. Executing OPT_DFF pass (perform DFF optimizations).
 
-147.4. Executing OPT_CLEAN pass (remove unused cells and wires).
+148.4. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 7 unused cells and 21364 unused wires.
 <suppressed ~113 debug messages>
 
-147.5. Finished fast OPT passes.
+148.5. Finished fast OPT passes.
 
-148. Executing HIERARCHY pass (managing design hierarchy).
+149. Executing HIERARCHY pass (managing design hierarchy).
 
-148.1. Analyzing design hierarchy..
+149.1. Analyzing design hierarchy..
 Top module:  \game_top
 
-148.2. Analyzing design hierarchy..
+149.2. Analyzing design hierarchy..
 Top module:  \game_top
 Removed 0 unused modules.
 
-149. Executing CHECK pass (checking for obvious problems).
+150. Executing CHECK pass (checking for obvious problems).
 Checking module game_top...
 Found and reported 0 problems.
 
-150. Printing statistics.
+151. Printing statistics.
 
 === game_top ===
 
@@ -3745,50 +3748,50 @@ Found and reported 0 problems.
         4   $paramod$fc0006bcb63aac2f1424db61b4cd9d2b7cb9a6e7\SB_RAM40_4K
        14   $scopeinfo
 
-151. Executing OPT pass (performing simple optimizations).
+152. Executing OPT pass (performing simple optimizations).
 
-151.1. Executing OPT_EXPR pass (perform const folding).
+152.1. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-151.2. Executing OPT_MERGE pass (detect identical cells).
+152.2. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 54464 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-151.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
+152.3. Executing OPT_MUXTREE pass (detect dead branches in mux trees).
 Running muxtree optimizer on module \game_top..
   Creating internal representation of mux trees.
   No muxes found in this module.
 Removed 0 multiplexer ports.
 
-151.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
+152.4. Executing OPT_REDUCE pass (consolidate $*mux and $reduce_* inputs).
   Optimizing cells in module \game_top.
 Performed a total of 0 changes.
 
-151.5. Executing OPT_MERGE pass (detect identical cells).
+152.5. Executing OPT_MERGE pass (detect identical cells).
 Finding identical cells in module `\game_top'.
 Computing hashes of 54464 cells of `\game_top'.
 Finding duplicate cells in `\game_top'.
 Removed a total of 0 cells.
 
-151.6. Executing OPT_DFF pass (perform DFF optimizations).
+152.6. Executing OPT_DFF pass (perform DFF optimizations).
 
-151.7. Executing OPT_CLEAN pass (remove unused cells and wires).
+152.7. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 
-151.8. Executing OPT_EXPR pass (perform const folding).
+152.8. Executing OPT_EXPR pass (perform const folding).
 Optimizing module game_top.
 
-151.9. Finished fast OPT passes. (There is nothing left to do.)
+152.9. Finished fast OPT passes. (There is nothing left to do.)
 
-152. Executing OPT_CLEAN pass (remove unused cells and wires).
+153. Executing OPT_CLEAN pass (remove unused cells and wires).
 Finding unused cells or wires in module \game_top..
 Removed 14 unused cells and 137 unused wires.
 <suppressed ~151 debug messages>
 {
    "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
-   "invocation": "stat -json ",
+   "invocation": "stat -json -liberty /home/samu/Documentos/Arqui/Proyecto_3_arquitectura_de_computadores/runs/fpga_original/tmp/2e11bcb236a54efe8a757b9d64f5aed6.lib ",
    "modules": {
       "\\game_top": {
          "num_wires":         38124,
@@ -3859,7 +3862,7 @@ Removed 14 unused cells and 137 unused wires.
       }
 }
 
-153. Printing statistics.
+154. Printing statistics.
 
 === game_top ===
 
@@ -3891,5 +3894,512 @@ Removed 14 unused cells and 137 unused wires.
       190   $_XOR_
         4   $paramod$fc0006bcb63aac2f1424db61b4cd9d2b7cb9a6e7\SB_RAM40_4K
 
-154. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
-ERROR: Missing `-liberty liberty_file' option!
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_DFFE_PN_ is unknown!
+   Area for cell type $_DFFE_PP0N_ is unknown!
+   Area for cell type $_DFFE_PP0P_ is unknown!
+   Area for cell type $_DFFE_PP_ is unknown!
+   Area for cell type $_DFF_PP0_ is unknown!
+   Area for cell type $_DFF_PP1_ is unknown!
+   Area for cell type $_DFF_P_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $paramod$fc0006bcb63aac2f1424db61b4cd9d2b7cb9a6e7\SB_RAM40_4K is unknown!
+
+155. Executing DFFLIBMAP pass (mapping DFF cells to sequential cells from liberty file).
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnq_1 (noninv, pins=3, area=65.86) is a direct match for cell type $_DFF_N_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffq_1 (noninv, pins=3, area=63.66) is a direct match for cell type $_DFF_P_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 (noninv, pins=4, area=74.64) is a direct match for cell type $_DFF_NN0_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 (noninv, pins=4, area=79.03) is a direct match for cell type $_DFF_NN1_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 (noninv, pins=4, area=74.64) is a direct match for cell type $_DFF_PN0_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 (noninv, pins=4, area=79.03) is a direct match for cell type $_DFF_PN1_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1 (noninv, pins=5, area=94.39) is a direct match for cell type $_DFFSR_NNN_.
+  cell gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 (noninv, pins=5, area=85.61) is a direct match for cell type $_DFFSR_PNN_.
+  final dff cell mappings:
+    \gf180mcu_fd_sc_mcu7t5v0__dffnq_1 _DFF_N_ (.CLKN( C), .D( D), .Q( Q));
+    \gf180mcu_fd_sc_mcu7t5v0__dffq_1 _DFF_P_ (.CLK( C), .D( D), .Q( Q));
+    \gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1 _DFF_NN0_ (.CLKN( C), .D( D), .Q( Q), .RN( R));
+    \gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1 _DFF_NN1_ (.CLKN( C), .D( D), .Q( Q), .SETN( R));
+    unmapped dff cell: $_DFF_NP0_
+    unmapped dff cell: $_DFF_NP1_
+    \gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 _DFF_PN0_ (.CLK( C), .D( D), .Q( Q), .RN( R));
+    \gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 _DFF_PN1_ (.CLK( C), .D( D), .Q( Q), .SETN( R));
+    unmapped dff cell: $_DFF_PP0_
+    unmapped dff cell: $_DFF_PP1_
+    unmapped dff cell: $_DFFE_NN_
+    unmapped dff cell: $_DFFE_NP_
+    unmapped dff cell: $_DFFE_PN_
+    unmapped dff cell: $_DFFE_PP_
+    \gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1 _DFFSR_NNN_ (.CLKN( C), .D( D), .Q( Q), .RN( R), .SETN( S));
+    unmapped dff cell: $_DFFSR_NNP_
+    unmapped dff cell: $_DFFSR_NPN_
+    unmapped dff cell: $_DFFSR_NPP_
+    \gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1 _DFFSR_PNN_ (.CLK( C), .D( D), .Q( Q), .RN( R), .SETN( S));
+    unmapped dff cell: $_DFFSR_PNP_
+    unmapped dff cell: $_DFFSR_PPN_
+    unmapped dff cell: $_DFFSR_PPP_
+
+155.1. Executing DFFLEGALIZE pass (convert FFs to types supported by the target).
+Mapping DFF cells in module `\game_top':
+  mapped 194 $_DFF_PN0_ cells to \gf180mcu_fd_sc_mcu7t5v0__dffrnq_1 cells.
+  mapped 3 $_DFF_PN1_ cells to \gf180mcu_fd_sc_mcu7t5v0__dffsnq_1 cells.
+  mapped 16452 $_DFF_P_ cells to \gf180mcu_fd_sc_mcu7t5v0__dffq_1 cells.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/samu/Documentos/Arqui/Proyecto_3_arquitectura_de_computadores/runs/fpga_original/tmp/2e11bcb236a54efe8a757b9d64f5aed6.lib ",
+   "modules": {
+      "\\game_top": {
+         "num_wires":         54896,
+         "num_wire_bits":     71361,
+         "num_pub_wires":     570,
+         "num_pub_wire_bits": 16867,
+         "num_ports":         21,
+         "num_port_bits":     27,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         71222,
+         "num_submodules":       0,
+         "area":              1062064.102400,
+         "sequential_area":    1062064.102400,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 2830,
+            "$_AND_": 107,
+            "$_MUX_": 49675,
+            "$_NAND_": 74,
+            "$_NOR_": 178,
+            "$_NOT_": 428,
+            "$_ORNOT_": 66,
+            "$_OR_": 956,
+            "$_XNOR_": 65,
+            "$_XOR_": 190,
+            "$paramod$fc0006bcb63aac2f1424db61b4cd9d2b7cb9a6e7\\SB_RAM40_4K": 4,
+            "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 16452,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 194,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 3
+         }
+      }
+   },
+      "design": {
+         "num_wires":         54896,
+         "num_wire_bits":     71361,
+         "num_pub_wires":     570,
+         "num_pub_wire_bits": 16867,
+         "num_ports":         21,
+         "num_port_bits":     27,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         71222,
+         "num_submodules":       0,
+         "area":              1062064.102400,
+         "sequential_area":    1062064.102400,
+         "num_cells_by_type": {
+            "$_ANDNOT_": 2830,
+            "$_AND_": 107,
+            "$_MUX_": 49675,
+            "$_NAND_": 74,
+            "$_NOR_": 178,
+            "$_NOT_": 428,
+            "$_ORNOT_": 66,
+            "$_OR_": 956,
+            "$_XNOR_": 65,
+            "$_XOR_": 190,
+            "$paramod$fc0006bcb63aac2f1424db61b4cd9d2b7cb9a6e7\\SB_RAM40_4K": 4,
+            "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 16452,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 194,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 3
+         }
+      }
+}
+
+156. Printing statistics.
+
+=== game_top ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+    54896        - wires
+    71361        - wire bits
+      570        - public wires
+    16867        - public wire bits
+       21        - ports
+       27        - port bits
+    71222 1.06E+06 cells
+     2830        -   $_ANDNOT_
+      107        -   $_AND_
+    49675        -   $_MUX_
+       74        -   $_NAND_
+      178        -   $_NOR_
+      428        -   $_NOT_
+       66        -   $_ORNOT_
+      956        -   $_OR_
+       65        -   $_XNOR_
+      190        -   $_XOR_
+        4        -   $paramod$fc0006bcb63aac2f1424db61b4cd9d2b7cb9a6e7\SB_RAM40_4K
+    16452 1.05E+06   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+      194 1.45E+04   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+        3  237.082   gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+
+   Area for cell type $_ANDNOT_ is unknown!
+   Area for cell type $_AND_ is unknown!
+   Area for cell type $_MUX_ is unknown!
+   Area for cell type $_NAND_ is unknown!
+   Area for cell type $_NOR_ is unknown!
+   Area for cell type $_NOT_ is unknown!
+   Area for cell type $_ORNOT_ is unknown!
+   Area for cell type $_OR_ is unknown!
+   Area for cell type $_XNOR_ is unknown!
+   Area for cell type $_XOR_ is unknown!
+   Area for cell type $paramod$fc0006bcb63aac2f1424db61b4cd9d2b7cb9a6e7\SB_RAM40_4K is unknown!
+
+   Chip area for module '\game_top': 1062064.102400
+     of which used for sequential elements: 1062064.102400 (100.00%)
+
+[INFO] Using generated ABC script '/home/samu/Documentos/Arqui/Proyecto_3_arquitectura_de_computadores/runs/fpga_original/06-yosys-synthesis/AREA_0.abc'…
+
+157. Executing ABC pass (technology mapping using ABC).
+
+157.1. Extracting gate netlist of module `\game_top' to `/tmp/yosys-abc-8iDM0A/input.blif'..
+
+157.1.1. Executed ABC.
+Extracted 54569 gates and 71283 wires to a netlist network with 16714 inputs and 16886 outputs.
+Running ABC script: /tmp/yosys-abc-8iDM0A/abc.script
+ABC: ======== ABC command line "source /tmp/yosys-abc-8iDM0A/abc.script"
+ABC: + read_blif /tmp/yosys-abc-8iDM0A/input.blif 
+ABC: + read_lib -w /home/samu/Documentos/Arqui/Proyecto_3_arquitectura_de_computadores/runs/fpga_original/tmp/2e11bcb236a54efe8a757b9d64f5aed6.lib 
+ABC: Parsing finished successfully.  Parsing time =     0.11 sec
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__antenna" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__bufz_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__bufz_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__bufz_3".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__bufz_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__bufz_8".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__bufz_12".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__bufz_16".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnq_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnrnq_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnrsnq_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnsnq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnsnq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffnsnq_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffq_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffrnq_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffrsnq_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffsnq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__dffsnq_4".
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__endcap" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fill_1" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fill_2" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fill_4" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fill_8" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fill_16" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fill_32" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fill_64" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_4" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_8" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_16" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_32" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__fillcap_64" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__filltie" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__hold".
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__icgtn_1" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__icgtn_2" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__icgtn_4" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__icgtp_1" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__icgtp_2" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped cell "gf180mcu_fd_sc_mcu7t5v0__icgtp_4" without logic function.
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__invz_1".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__invz_2".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__invz_3".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__invz_4".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__invz_8".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__invz_12".
+ABC: Scl_LibertyReadGenlib() skipped three-state cell "gf180mcu_fd_sc_mcu7t5v0__invz_16".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latq_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latrnq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latrnq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latrnq_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latrsnq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latrsnq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latrsnq_4".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latsnq_1".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latsnq_2".
+ABC: Scl_LibertyReadGenlib() skipped sequential cell "gf180mcu_fd_sc_mcu7t5v0__latsnq_4".
+ABC: Library "gf180mcu_fd_sc_mcu7t5v0__tt_025C_5v00" from "/home/samu/Documentos/Arqui/Proyecto_3_arquitectura_de_computadores/runs/fpga_original/tmp/2e11bcb236a54efe8a757b9d64f5aed6.lib" has 143 cells (72 skipped: 36 seq; 15 tri-state; 21 no func; 0 dont_use; 0 with 2 outputs; 0 with 3+ outputs).  Time =     0.22 sec
+ABC: Memory =   23.83 MB. Time =     0.22 sec
+ABC: Warning: Detected 6 multi-output cells (for example, "gf180mcu_fd_sc_mcu7t5v0__addf_1").
+ABC: + read_constr -v /home/samu/Documentos/Arqui/Proyecto_3_arquitectura_de_computadores/runs/fpga_original/06-yosys-synthesis/synthesis.abc.sdc 
+ABC: Setting driving cell to be "gf180mcu_fd_sc_mcu7t5v0__inv_1".
+ABC: Setting output load to be 72.910004.
+ABC: + source /home/samu/Documentos/Arqui/Proyecto_3_arquitectura_de_computadores/runs/fpga_original/06-yosys-synthesis/AREA_0.abc 
+ABC: Error: The network is combinational.
+ABC: WireLoad = "none"  Gates =  50465 (  1.8 %)   Cap = 31.4 ff ( 16.5 %)   Area =  1190070.62 ( 67.1 %)   Delay =642474.19 ps  (  9.7 %)               
+ABC: Path  0 --     145 : 0 1727 pi                                A =   0.00  Df =74930.8-27560.0 ps  S =132522.7 ps  Cin =  0.0 ff  Cout =8038.4 ff  Cmax =   0.0 ff  G =    0  
+ABC: Path  1 --   33649 : 1 1554 gf180mcu_fd_sc_mcu7t5v0__clkinv_1 A =   8.78  Df =633804.0-347104.7 ps  S =   0.0 ps  Cin =  4.2 ff  Cout =7301.3 ff  Cmax = 228.4 ff  G =173099  
+ABC: Path  2 --   79286 : 3    1 gf180mcu_fd_sc_mcu7t5v0__oai21_1  A =  17.56  Df =633969.5-347119.4 ps  S =57513.3 ps  Cin =  4.9 ff  Cout =   4.9 ff  Cmax = 124.5 ff  G =  100  
+ABC: Path  3 --   79290 : 5    1 gf180mcu_fd_sc_mcu7t5v0__oai221_1 A =  26.34  Df =632992.1-335420.1 ps  S =14228.3 ps  Cin =  4.8 ff  Cout =   4.8 ff  Cmax = 118.8 ff  G =  100  
+ABC: Path  4 --   79291 : 3    1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1  A =  17.56  Df =636525.9-335288.9 ps  S =14048.9 ps  Cin =  4.6 ff  Cout =   4.0 ff  Cmax = 124.2 ff  G =   88  
+ABC: Path  5 --   79340 : 4    1 gf180mcu_fd_sc_mcu7t5v0__aoi211_1 A =  21.95  Df =636624.7-332593.4 ps  S =10449.5 ps  Cin =  4.3 ff  Cout =   2.8 ff  Cmax =  82.4 ff  G =   66  
+ABC: Path  6 --   79342 : 3    1 gf180mcu_fd_sc_mcu7t5v0__or3_1    A =  21.95  Df =640325.2-336500.2 ps  S = 458.6 ps  Cin =  2.8 ff  Cout =   4.9 ff  Cmax = 239.0 ff  G =  172  
+ABC: Path  7 --   79346 : 3    1 gf180mcu_fd_sc_mcu7t5v0__aoi21_1  A =  17.56  Df =640597.4-4292.8 ps  S =1349.7 ps  Cin =  4.6 ff  Cout =   4.0 ff  Cmax = 124.2 ff  G =   88  
+ABC: Path  8 --   79449 : 4    1 gf180mcu_fd_sc_mcu7t5v0__aoi211_1 A =  21.95  Df =640876.6-2807.9 ps  S =1036.0 ps  Cin =  4.3 ff  Cout =   3.9 ff  Cmax =  82.4 ff  G =   91  
+ABC: Path  9 --   79450 : 4    1 gf180mcu_fd_sc_mcu7t5v0__aoi211_1 A =  21.95  Df =641393.9 -778.8 ps  S =1616.9 ps  Cin =  4.3 ff  Cout =   4.2 ff  Cmax =  82.4 ff  G =   98  
+ABC: Path 10 --   79451 : 1    1 gf180mcu_fd_sc_mcu7t5v0__clkinv_1 A =   8.78  Df =642474.2 -698.4 ps  S =1364.1 ps  Cin =  4.2 ff  Cout =  72.9 ff  Cmax = 228.4 ff  G = 1728  
+ABC: Start-point = pi144 (\u_pochoco.instr_addr [4]).  End-point = po16833 ($auto$rtlil.cc:3583:MuxGate$146408).
+ABC: netlist                       : i/o =16714/16886  lat =    0  nd = 50465  edge = 167925  area =1190135.59  delay =23.00  lev = 23
+ABC: + write_blif /tmp/yosys-abc-8iDM0A/output.blif 
+
+157.1.2. Re-integrating ABC results.
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and2_1 cells:      186
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and3_1 cells:       70
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__and4_1 cells:       25
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi211_1 cells:      139
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi21_1 cells:     1819
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi221_1 cells:      806
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi222_1 cells:       10
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__aoi22_1 cells:     9211
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__clkinv_1 cells:      915
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__mux2_2 cells:    16450
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__mux4_1 cells:       13
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand2_1 cells:     4124
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand3_1 cells:      857
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nand4_1 cells:       60
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor2_1 cells:     3168
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor3_1 cells:      198
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__nor4_1 cells:      255
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai211_1 cells:      472
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai21_1 cells:     4593
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai221_1 cells:     1473
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai222_1 cells:     2958
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai22_1 cells:     2178
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai31_1 cells:      131
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__oai32_1 cells:       54
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or2_1 cells:       81
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or3_1 cells:       37
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__or4_1 cells:        7
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xnor2_1 cells:       28
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xnor3_1 cells:        1
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xor2_1 cells:      140
+ABC RESULTS:   gf180mcu_fd_sc_mcu7t5v0__xor3_1 cells:        6
+ABC RESULTS:        internal signals:    37683
+ABC RESULTS:           input signals:    16714
+ABC RESULTS:          output signals:    16886
+Removing temp directory.
+Removing global temp directory.
+
+158. Executing SETUNDEF pass (replace undef values with defined constants).
+
+159. Executing HILOMAP pass (mapping to constant drivers).
+
+160. Executing SPLITNETS pass (splitting up multi-bit signals).
+
+161. Executing OPT_CLEAN pass (remove unused cells and wires).
+Finding unused cells or wires in module \game_top..
+Removed 26 unused cells and 71380 unused wires.
+<suppressed ~123 debug messages>
+
+162. Executing INSBUF pass (insert buffer cells for connected wires).
+
+163. Executing CHECK pass (checking for obvious problems).
+Checking module game_top...
+Found and reported 0 problems.
+{
+   "creator": "Yosys 0.62 (git sha1 7326bb7d6641500ecb285c291a54a662cb1e76cf, clang++ 21.1.2 -fPIC -O3)",
+   "invocation": "stat -json -liberty /home/samu/Documentos/Arqui/Proyecto_3_arquitectura_de_computadores/runs/fpga_original/tmp/2e11bcb236a54efe8a757b9d64f5aed6.lib ",
+   "modules": {
+      "\\game_top": {
+         "num_wires":         67312,
+         "num_wire_bits":     67318,
+         "num_pub_wires":     16765,
+         "num_pub_wire_bits": 16771,
+         "num_ports":         21,
+         "num_port_bits":     27,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         67250,
+         "num_submodules":       0,
+         "area":              2253293.772799,
+         "sequential_area":    1062064.102400,
+         "num_cells_by_type": {
+            "$paramod$fc0006bcb63aac2f1424db61b4cd9d2b7cb9a6e7\\SB_RAM40_4K": 4,
+            "gf180mcu_fd_sc_mcu7t5v0__and2_1": 186,
+            "gf180mcu_fd_sc_mcu7t5v0__and3_1": 70,
+            "gf180mcu_fd_sc_mcu7t5v0__and4_1": 25,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": 139,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": 1819,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi221_1": 806,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": 10,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": 9211,
+            "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 915,
+            "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 16452,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 194,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 3,
+            "gf180mcu_fd_sc_mcu7t5v0__mux2_2": 16450,
+            "gf180mcu_fd_sc_mcu7t5v0__mux4_1": 13,
+            "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 4124,
+            "gf180mcu_fd_sc_mcu7t5v0__nand3_1": 857,
+            "gf180mcu_fd_sc_mcu7t5v0__nand4_1": 60,
+            "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 3168,
+            "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 198,
+            "gf180mcu_fd_sc_mcu7t5v0__nor4_1": 255,
+            "gf180mcu_fd_sc_mcu7t5v0__oai211_1": 472,
+            "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 4593,
+            "gf180mcu_fd_sc_mcu7t5v0__oai221_1": 1473,
+            "gf180mcu_fd_sc_mcu7t5v0__oai222_1": 2958,
+            "gf180mcu_fd_sc_mcu7t5v0__oai22_1": 2178,
+            "gf180mcu_fd_sc_mcu7t5v0__oai31_1": 131,
+            "gf180mcu_fd_sc_mcu7t5v0__oai32_1": 54,
+            "gf180mcu_fd_sc_mcu7t5v0__or2_1": 81,
+            "gf180mcu_fd_sc_mcu7t5v0__or3_1": 37,
+            "gf180mcu_fd_sc_mcu7t5v0__or4_1": 7,
+            "gf180mcu_fd_sc_mcu7t5v0__tieh": 12,
+            "gf180mcu_fd_sc_mcu7t5v0__tiel": 120,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": 28,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__xor2_1": 140,
+            "gf180mcu_fd_sc_mcu7t5v0__xor3_1": 6
+         }
+      }
+   },
+      "design": {
+         "num_wires":         67312,
+         "num_wire_bits":     67318,
+         "num_pub_wires":     16765,
+         "num_pub_wire_bits": 16771,
+         "num_ports":         21,
+         "num_port_bits":     27,
+         "num_memories":      0,
+         "num_memory_bits":   0,
+         "num_processes":     0,
+         "num_cells":         67250,
+         "num_submodules":       0,
+         "area":              2253293.772799,
+         "sequential_area":    1062064.102400,
+         "num_cells_by_type": {
+            "$paramod$fc0006bcb63aac2f1424db61b4cd9d2b7cb9a6e7\\SB_RAM40_4K": 4,
+            "gf180mcu_fd_sc_mcu7t5v0__and2_1": 186,
+            "gf180mcu_fd_sc_mcu7t5v0__and3_1": 70,
+            "gf180mcu_fd_sc_mcu7t5v0__and4_1": 25,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi211_1": 139,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi21_1": 1819,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi221_1": 806,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi222_1": 10,
+            "gf180mcu_fd_sc_mcu7t5v0__aoi22_1": 9211,
+            "gf180mcu_fd_sc_mcu7t5v0__clkinv_1": 915,
+            "gf180mcu_fd_sc_mcu7t5v0__dffq_1": 16452,
+            "gf180mcu_fd_sc_mcu7t5v0__dffrnq_1": 194,
+            "gf180mcu_fd_sc_mcu7t5v0__dffsnq_1": 3,
+            "gf180mcu_fd_sc_mcu7t5v0__mux2_2": 16450,
+            "gf180mcu_fd_sc_mcu7t5v0__mux4_1": 13,
+            "gf180mcu_fd_sc_mcu7t5v0__nand2_1": 4124,
+            "gf180mcu_fd_sc_mcu7t5v0__nand3_1": 857,
+            "gf180mcu_fd_sc_mcu7t5v0__nand4_1": 60,
+            "gf180mcu_fd_sc_mcu7t5v0__nor2_1": 3168,
+            "gf180mcu_fd_sc_mcu7t5v0__nor3_1": 198,
+            "gf180mcu_fd_sc_mcu7t5v0__nor4_1": 255,
+            "gf180mcu_fd_sc_mcu7t5v0__oai211_1": 472,
+            "gf180mcu_fd_sc_mcu7t5v0__oai21_1": 4593,
+            "gf180mcu_fd_sc_mcu7t5v0__oai221_1": 1473,
+            "gf180mcu_fd_sc_mcu7t5v0__oai222_1": 2958,
+            "gf180mcu_fd_sc_mcu7t5v0__oai22_1": 2178,
+            "gf180mcu_fd_sc_mcu7t5v0__oai31_1": 131,
+            "gf180mcu_fd_sc_mcu7t5v0__oai32_1": 54,
+            "gf180mcu_fd_sc_mcu7t5v0__or2_1": 81,
+            "gf180mcu_fd_sc_mcu7t5v0__or3_1": 37,
+            "gf180mcu_fd_sc_mcu7t5v0__or4_1": 7,
+            "gf180mcu_fd_sc_mcu7t5v0__tieh": 12,
+            "gf180mcu_fd_sc_mcu7t5v0__tiel": 120,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor2_1": 28,
+            "gf180mcu_fd_sc_mcu7t5v0__xnor3_1": 1,
+            "gf180mcu_fd_sc_mcu7t5v0__xor2_1": 140,
+            "gf180mcu_fd_sc_mcu7t5v0__xor3_1": 6
+         }
+      }
+}
+
+164. Printing statistics.
+
+=== game_top ===
+
+        +----------Local Count, excluding submodules.
+        |        +-Local Area, excluding submodules.
+        |        | 
+    67312        - wires
+    67318        - wire bits
+    16765        - public wires
+    16771        - public wire bits
+       21        - ports
+       27        - port bits
+    67250 2.25E+06 cells
+        4        -   $paramod$fc0006bcb63aac2f1424db61b4cd9d2b7cb9a6e7\SB_RAM40_4K
+      186 3.27E+03   gf180mcu_fd_sc_mcu7t5v0__and2_1
+       70  1536.64   gf180mcu_fd_sc_mcu7t5v0__and3_1
+       25   603.68   gf180mcu_fd_sc_mcu7t5v0__and4_1
+      139 3.05E+03   gf180mcu_fd_sc_mcu7t5v0__aoi211_1
+     1819 3.19E+04   gf180mcu_fd_sc_mcu7t5v0__aoi21_1
+      806 1.95E+04   gf180mcu_fd_sc_mcu7t5v0__aoi221_1
+       10  307.328   gf180mcu_fd_sc_mcu7t5v0__aoi222_1
+     9211 1.82E+05   gf180mcu_fd_sc_mcu7t5v0__aoi22_1
+      915 8.03E+03   gf180mcu_fd_sc_mcu7t5v0__clkinv_1
+    16452 1.05E+06   gf180mcu_fd_sc_mcu7t5v0__dffq_1
+      194 1.45E+04   gf180mcu_fd_sc_mcu7t5v0__dffrnq_1
+        3  237.082   gf180mcu_fd_sc_mcu7t5v0__dffsnq_1
+    16450 5.42E+05   gf180mcu_fd_sc_mcu7t5v0__mux2_2
+       13  913.203   gf180mcu_fd_sc_mcu7t5v0__mux4_1
+     4124 4.53E+04   gf180mcu_fd_sc_mcu7t5v0__nand2_1
+      857 1.32E+04   gf180mcu_fd_sc_mcu7t5v0__nand3_1
+       60 1.19E+03   gf180mcu_fd_sc_mcu7t5v0__nand4_1
+     3168 4.17E+04   gf180mcu_fd_sc_mcu7t5v0__nor2_1
+      198 3.48E+03   gf180mcu_fd_sc_mcu7t5v0__nor3_1
+      255  5597.76   gf180mcu_fd_sc_mcu7t5v0__nor4_1
+      472 1.04E+04   gf180mcu_fd_sc_mcu7t5v0__oai211_1
+     4593 8.07E+04   gf180mcu_fd_sc_mcu7t5v0__oai21_1
+     1473 3.88E+04   gf180mcu_fd_sc_mcu7t5v0__oai221_1
+     2958 9.74E+04   gf180mcu_fd_sc_mcu7t5v0__oai222_1
+     2178 4.78E+04   gf180mcu_fd_sc_mcu7t5v0__oai22_1
+      131 3.16E+03   gf180mcu_fd_sc_mcu7t5v0__oai31_1
+       54  1422.49   gf180mcu_fd_sc_mcu7t5v0__oai32_1
+       81  1422.49   gf180mcu_fd_sc_mcu7t5v0__or2_1
+       37  812.224   gf180mcu_fd_sc_mcu7t5v0__or3_1
+        7  184.397   gf180mcu_fd_sc_mcu7t5v0__or4_1
+       12   105.37   gf180mcu_fd_sc_mcu7t5v0__tieh
+      120 1.05E+03   gf180mcu_fd_sc_mcu7t5v0__tiel
+       28  799.053   gf180mcu_fd_sc_mcu7t5v0__xnor2_1
+        1   52.685   gf180mcu_fd_sc_mcu7t5v0__xnor3_1
+      140 3.69E+03   gf180mcu_fd_sc_mcu7t5v0__xor2_1
+        6  302.938   gf180mcu_fd_sc_mcu7t5v0__xor3_1
+
+   Area for cell type $paramod$fc0006bcb63aac2f1424db61b4cd9d2b7cb9a6e7\SB_RAM40_4K is unknown!
+
+   Chip area for module '\game_top': 2253293.772800
+     of which used for sequential elements: 1062064.102400 (47.13%)
+
+165. Executing Verilog backend.
+Dumping module `\game_top'.
+
+166. Executing JSON backend.
